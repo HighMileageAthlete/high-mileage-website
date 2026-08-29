@@ -1,27 +1,25 @@
-# High Mileage Website v1.0
+# High Mileage Website v1.2
 
-This is the complete GitHub Pages-ready first version of the High Mileage website.
+Visual refinement release for the High Mileage GitHub Pages site.
 
-## Files
-- `index.html` — main website
-- `styles.css` — visual design and responsive layout
-- `script.js` — mobile navigation and footer year
-- `assets/` — reserved for logo, photos, and other brand assets
+## What changed
+- Replaced the abstract hero lines with the approved cinematic storm / athlete hero.
+- Preserved the charcoal, bronze and warm-white High Mileage palette.
+- Enlarged and brightened the header Ridgeline Cross mark for better readability.
+- Refined hero typography and spacing for a stronger, calmer visual hierarchy.
+- Added **ONCE AN ATHLETE. ALWAYS AN ATHLETE.** as a prominent hero brand line.
+- Kept the headline as live HTML text for responsive sizing and future editing.
+- Preserved the existing About, Method, First Responders, Resources, Connect and Faith sections.
+- Added responsive hero treatment for desktop, tablet and mobile.
 
-## GitHub Pages
-1. Create a public GitHub repository, for example `high-mileage-website`.
-2. Upload the contents of this folder so `index.html` is in the repository root.
-3. Repository → Settings → Pages.
-4. Under Build and deployment choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then Save.
-6. Test the generated GitHub Pages URL.
-7. Add `highmileageathlete.com` under Custom domain.
-8. Update the DNS records at IONOS using the records GitHub provides.
-9. Enable HTTPS when available.
+## Upload to GitHub
+Upload the **contents** of this folder to the root of the existing `high-mileage-website` repository, replacing `index.html`, `styles.css`, `script.js`, and the existing assets with the matching v1.2 files. Keep the `assets` directory intact.
 
-## Before launch
-Replace the placeholder YouTube and Instagram URLs in `index.html` with the actual secured High Mileage profile URLs. Replace the CSS placeholder logo/mark with the final approved Ridgeline Cross logo exports when we add the production asset set.
+The hero image path is:
+`assets/high-mileage-storm-hero.png`
 
+Existing logo paths remain:
+`assets/ridgeline-cross-avatar.png`
+`assets/ridgeline-cross-patch.png`
 
-## v1.1 Logo Integration
-The approved Ridgeline Cross circular patch is now used in the header, hero area, and footer.
+After committing to `main`, allow GitHub Pages to redeploy, then use Ctrl+F5 on Windows to force-refresh the live site.
