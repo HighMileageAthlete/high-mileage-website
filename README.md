@@ -21,3 +21,7 @@ This is the complete GitHub Pages-ready first version of the High Mileage websit
 
 ## Before launch
 Replace the placeholder YouTube and Instagram URLs in `index.html` with the actual secured High Mileage profile URLs. Replace the CSS placeholder logo/mark with the final approved Ridgeline Cross logo exports when we add the production asset set.
+
+
+## v1.1 Logo Integration
+The approved Ridgeline Cross circular patch is now used in the header, hero area, and footer.
