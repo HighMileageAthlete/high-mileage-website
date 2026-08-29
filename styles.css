@@ -169,3 +169,132 @@ footer .logo-img{width:44px;height:44px}
     height:46px;
   }
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.4
+   Lightning Cross / Hero Composition Pass
+   ========================= */
+
+/*
+  The cross was already present in the approved hero artwork.
+  V1.4 preserves the artwork and changes the web treatment so the
+  cross can read through the left-side text protection gradient.
+*/
+
+.hero{
+  padding-top:148px;
+  background-position:center 31%;
+}
+
+/* Keep headline powerful, but open a little more visual room toward center. */
+.hero-copy{
+  width:min(45vw,660px);
+  max-width:660px;
+}
+
+.hero h1{
+  font-size:clamp(60px,6.85vw,106px);
+}
+
+/*
+  V1.3's left-to-right shade was too opaque over the lightning cross.
+  This version keeps a dark text field at far left, then opens a
+  controlled "window" around the cross before darkening subtly again.
+*/
+.hero-shade{
+  background:
+    linear-gradient(180deg,
+      rgba(5,10,13,.18) 0%,
+      rgba(5,10,13,.03) 34%,
+      rgba(5,10,13,.16) 72%,
+      #080f14 100%),
+    linear-gradient(90deg,
+      rgba(5,10,13,.94) 0%,
+      rgba(5,10,13,.88) 17%,
+      rgba(5,10,13,.70) 28%,
+      rgba(5,10,13,.34) 39%,
+      rgba(5,10,13,.10) 51%,
+      rgba(5,10,13,.06) 72%,
+      rgba(5,10,13,.13) 100%);
+}
+
+/* A restrained glow window helps the actual cross in the photograph read,
+   without drawing or adding a second artificial cross. */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:1;
+  background:
+    radial-gradient(ellipse at 29% 28%,
+      rgba(221,174,104,.15) 0%,
+      rgba(221,174,104,.08) 11%,
+      rgba(221,174,104,.025) 22%,
+      transparent 36%);
+  mix-blend-mode:screen;
+}
+
+.hero-copy{
+  z-index:2;
+}
+
+/* Keep the Ridgeline seal deliberately inside the frame. */
+.hero .seal,
+.hero .real-seal{
+  right:5.5vw;
+  bottom:9vh;
+}
+
+/* Wide desktop: preserve the cross/athlete/seal hierarchy. */
+@media(min-width:1400px){
+  .hero{
+    background-position:center 29%;
+  }
+  .hero-copy{
+    width:min(43vw,650px);
+    max-width:650px;
+  }
+  .hero h1{
+    font-size:clamp(60px,6.55vw,104px);
+  }
+}
+
+/* Laptop: prioritize cross visibility while keeping the athlete clear of nav. */
+@media(min-width:901px) and (max-width:1399px){
+  .hero{
+    background-position:center 35%;
+  }
+  .hero-copy{
+    width:min(46vw,630px);
+  }
+  .hero h1{
+    font-size:clamp(58px,6.7vw,100px);
+  }
+}
+
+/* On smaller screens the cross remains atmospheric rather than competing
+   with the copy. */
+@media(max-width:900px){
+  .hero{
+    background-position:60% 34%;
+  }
+  .hero::after{
+    background:
+      radial-gradient(ellipse at 27% 27%,
+        rgba(221,174,104,.11) 0%,
+        rgba(221,174,104,.045) 17%,
+        transparent 34%);
+  }
+}
+
+@media(max-width:600px){
+  .hero-copy{
+    width:100%;
+    max-width:520px;
+  }
+  .hero h1{
+    font-size:clamp(55px,17vw,76px);
+  }
+}

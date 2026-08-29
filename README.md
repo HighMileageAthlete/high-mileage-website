@@ -32,3 +32,11 @@ After committing to `main`, allow GitHub Pages to redeploy, then use Ctrl+F5 on 
 - Improved header contrast and logo visibility.
 - Preserved the storm/cross/athlete visual direction from v1.2.
 - Added responsive positioning for desktop, tablet, and mobile.
+
+## v1.4 — Lightning Cross / Hero Composition
+- Preserves the approved V1.3 hero artwork.
+- Rebalances the hero shade so the existing lightning cross is visible.
+- Adds a restrained warm visibility window around the original cross; no replacement cross is drawn.
+- Slightly tightens the headline footprint to create visual breathing room.
+- Keeps the athlete below the navigation and the Ridgeline seal inside the frame.
+- Adds desktop/laptop/mobile composition tuning.
