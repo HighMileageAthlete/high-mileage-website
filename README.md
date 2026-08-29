@@ -23,3 +23,12 @@ Existing logo paths remain:
 `assets/ridgeline-cross-patch.png`
 
 After committing to `main`, allow GitHub Pages to redeploy, then use Ctrl+F5 on Windows to force-refresh the live site.
+
+## v1.3 — Hero Refinement
+- Repositioned the hero image so the athlete's head clears the navigation.
+- Reduced headline scale slightly to add breathing room.
+- Pulled the Ridgeline Cross badge inward and upward.
+- Brightened the hero logo treatment by ~7%.
+- Improved header contrast and logo visibility.
+- Preserved the storm/cross/athlete visual direction from v1.2.
+- Added responsive positioning for desktop, tablet, and mobile.

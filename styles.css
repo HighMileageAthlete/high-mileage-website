@@ -18,3 +18,154 @@ footer{padding:35px 9vw;border-top:1px solid var(--line);display:flex;align-item
 .real-seal img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 26px rgba(0,0,0,.5))}
 footer .logo-img{width:44px;height:44px}
 @media(max-width:600px){.logo-img{width:42px;height:42px}}
+
+
+/* =========================
+   HIGH MILEAGE — V1.3 HERO REFINEMENT
+   Surgical visual refinement of the V1.2 direction.
+   ========================= */
+
+.site-header{
+  background:linear-gradient(180deg,rgba(8,15,20,.96),rgba(8,15,20,.78));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hero{
+  min-height:100svh;
+  padding-top:150px;
+  padding-bottom:90px;
+  background:
+    linear-gradient(90deg, rgba(8,15,20,.92) 0%, rgba(8,15,20,.76) 30%, rgba(8,15,20,.30) 56%, rgba(8,15,20,.08) 78%, rgba(8,15,20,.18) 100%),
+    linear-gradient(180deg, rgba(8,15,20,.10) 0%, rgba(8,15,20,.04) 58%, rgba(8,15,20,.82) 100%),
+    url("assets/high-mileage-storm-hero.png");
+  background-size:cover;
+  background-position:center 34%;
+}
+
+.hero-copy{
+  max-width:690px;
+  padding-top:14px;
+}
+
+.hero h1{
+  font-size:clamp(64px,7.9vw,126px);
+  line-height:.90;
+  letter-spacing:.5px;
+  text-wrap:balance;
+  text-shadow:0 4px 24px rgba(0,0,0,.35);
+}
+
+.hero .eyebrow{
+  margin-bottom:20px;
+  text-shadow:0 2px 12px rgba(0,0,0,.35);
+}
+
+.hero .lead{
+  max-width:560px;
+}
+
+.hero-accent-line{
+  width:72px;
+  height:2px;
+  background:linear-gradient(90deg,var(--gold),rgba(176,138,87,0));
+  margin:22px 0 22px;
+}
+
+.hero .seal,
+.hero .real-seal{
+  right:4.5vw;
+  bottom:8vh;
+  width:148px;
+  height:148px;
+  opacity:.96;
+  transform:none;
+}
+
+.hero .real-seal img{
+  filter:brightness(1.07) drop-shadow(0 12px 26px rgba(0,0,0,.48));
+}
+
+.site-header .logo-img{
+  width:54px;
+  height:54px;
+  filter:brightness(1.08) drop-shadow(0 4px 10px rgba(0,0,0,.42));
+}
+
+.site-header .brand b{
+  font-size:20px;
+  letter-spacing:2.3px;
+}
+
+.site-header .brand em{
+  font-size:8.5px;
+  letter-spacing:1.45px;
+}
+
+/* Give the image more breathing room on wide displays */
+@media(min-width:1400px){
+  .hero{
+    background-position:center 30%;
+  }
+  .hero-copy{
+    margin-left:1vw;
+  }
+  .hero .seal,
+  .hero .real-seal{
+    right:5.2vw;
+    bottom:8.5vh;
+  }
+}
+
+/* Keep the athlete's face safely below the nav on normal laptops */
+@media(min-width:901px) and (max-width:1399px){
+  .hero{
+    background-position:center 38%;
+  }
+  .hero h1{
+    font-size:clamp(62px,7.4vw,112px);
+  }
+}
+
+/* Tablet refinements */
+@media(max-width:900px){
+  .hero{
+    padding-top:125px;
+    background-position:61% 34%;
+  }
+  .hero-copy{
+    max-width:610px;
+  }
+  .hero .seal,
+  .hero .real-seal{
+    width:126px;
+    height:126px;
+    right:5vw;
+    bottom:5vh;
+  }
+}
+
+/* Mobile keeps the text readable and avoids awkward subject cropping */
+@media(max-width:600px){
+  .hero{
+    min-height:92svh;
+    padding-top:112px;
+    background:
+      linear-gradient(90deg, rgba(8,15,20,.94) 0%, rgba(8,15,20,.72) 56%, rgba(8,15,20,.24) 100%),
+      linear-gradient(180deg, rgba(8,15,20,.08) 0%, rgba(8,15,20,.55) 72%, rgba(8,15,20,.90) 100%),
+      url("assets/high-mileage-storm-hero.png");
+    background-size:cover;
+    background-position:64% center;
+  }
+  .hero h1{
+    font-size:58px;
+    max-width:92vw;
+  }
+  .hero-copy{
+    max-width:92vw;
+  }
+  .site-header .logo-img{
+    width:46px;
+    height:46px;
+  }
+}
