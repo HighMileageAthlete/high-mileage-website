@@ -298,3 +298,109 @@ footer .logo-img{width:44px;height:44px}
     font-size:clamp(55px,17vw,76px);
   }
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.5
+   Dedicated Hero Image Layer
+   ========================= */
+
+/*
+  V1.5 fixes the lightning-cross cropping issue by removing the hero artwork
+  from CSS background rendering and displaying it as a real image layer.
+  This gives us reliable control over crop and focal position.
+*/
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:#080f14 !important;
+}
+
+/* Real image layer: keeps the athlete and the lightning cross in view */
+.hero-image-layer{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:58% 34%;
+  z-index:0;
+  pointer-events:none;
+  user-select:none;
+}
+
+/* Rebuild the V1.4 tonal treatment above the image */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,
+      rgba(5,10,13,.18) 0%,
+      rgba(5,10,13,.03) 34%,
+      rgba(5,10,13,.16) 72%,
+      #080f14 100%),
+    linear-gradient(90deg,
+      rgba(5,10,13,.93) 0%,
+      rgba(5,10,13,.86) 18%,
+      rgba(5,10,13,.68) 29%,
+      rgba(5,10,13,.30) 40%,
+      rgba(5,10,13,.08) 52%,
+      rgba(5,10,13,.05) 72%,
+      rgba(5,10,13,.12) 100%);
+}
+
+/* Subtle warm lift where the existing cross already lives */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 31% 29%,
+      rgba(221,174,104,.13) 0%,
+      rgba(221,174,104,.06) 12%,
+      rgba(221,174,104,.02) 23%,
+      transparent 37%);
+  mix-blend-mode:screen;
+}
+
+/* Content stays above the image and overlays */
+.hero-copy,
+.hero .seal,
+.hero .real-seal{
+  position:relative;
+  z-index:2;
+}
+
+/* Preserve V1.4 desktop composition */
+@media(min-width:1400px){
+  .hero-image-layer{
+    object-position:57% 30%;
+  }
+}
+
+/* Typical laptop/desktop screens: this is the key correction */
+@media(min-width:901px) and (max-width:1399px){
+  .hero-image-layer{
+    object-position:60% 35%;
+  }
+}
+
+/* Tablet */
+@media(max-width:900px){
+  .hero-image-layer{
+    object-position:63% 34%;
+  }
+}
+
+/* Mobile: prioritize athlete while keeping lightning atmospheric */
+@media(max-width:600px){
+  .hero-image-layer{
+    object-position:66% center;
+  }
+}

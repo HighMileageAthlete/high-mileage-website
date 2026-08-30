@@ -40,3 +40,11 @@ After committing to `main`, allow GitHub Pages to redeploy, then use Ctrl+F5 on 
 - Slightly tightens the headline footprint to create visual breathing room.
 - Keeps the athlete below the navigation and the Ridgeline seal inside the frame.
 - Adds desktop/laptop/mobile composition tuning.
+
+## v1.5 — Hero Image Layer Fix
+- Keeps the V1.4 design, colors, brightness, typography, and spacing.
+- Changes the storm hero from a CSS background image to a real `<img>` layer.
+- Uses `object-fit: cover` plus controlled `object-position` values for desktop, laptop, tablet, and mobile.
+- Preserves the existing lightning cross in the source artwork instead of generating a new one.
+- Makes the cross much less likely to be cropped out at common browser sizes.
+- Bottom-right logo treatment intentionally left unchanged for the next pass.
