@@ -25,3 +25,10 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Anchors the hero image near the top to restore the full head/face.
 - Shifts the artwork right so more of the original lightning cross clears the headline.
 - Leaves colors, brightness, typography, navigation, buttons, and bottom-right logo treatment unchanged.
+
+## v1.9 — Restore Hero Logo
+- No new artwork.
+- Preserves the successful V1.8 hero crop and lightning cross.
+- Fixes the hidden hero Ridgeline Cross seal caused by an older `.seal { display:none; }` rule.
+- Restores the seal in the lower-right corner on desktop/tablet.
+- Leaves mobile uncluttered by hiding the large hero seal on narrow screens.
