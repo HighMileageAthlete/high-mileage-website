@@ -433,3 +433,70 @@ footer .logo-img{width:44px;height:44px}
     transform:translate(-43%,-50%);
   }
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.7
+   Hero Fine-Tuning Pass
+   ========================= */
+
+/*
+  Goal:
+  1) restore the athlete's full head/face below the navigation,
+  2) reveal more of the existing lightning cross,
+  3) preserve V1.6 color, brightness, typography, and overall scale.
+*/
+
+/* Slightly reduce the zoom introduced in V1.6 and move the image down. */
+.hero-image-layer{
+  width:108%;
+  height:108%;
+  left:-1%;
+  top:2.5%;
+  object-fit:cover;
+  object-position:57% 38%;
+}
+
+/* Wide desktop */
+@media(min-width:1400px){
+  .hero-image-layer{
+    width:107%;
+    height:107%;
+    left:-0.5%;
+    top:3.5%;
+    object-position:56% 39%;
+  }
+}
+
+/* Typical laptop / desktop — tuned for the current screenshot proportions */
+@media(min-width:901px) and (max-width:1399px){
+  .hero-image-layer{
+    width:108%;
+    height:108%;
+    left:-0.5%;
+    top:4%;
+    object-position:56.5% 40%;
+  }
+}
+
+/* Tablet */
+@media(max-width:900px){
+  .hero-image-layer{
+    width:108%;
+    height:108%;
+    left:-1%;
+    top:3%;
+    object-position:61% 39%;
+  }
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .hero-image-layer{
+    width:106%;
+    height:106%;
+    left:-1%;
+    top:2%;
+    object-position:64% 40%;
+  }
+}
