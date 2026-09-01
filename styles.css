@@ -404,3 +404,32 @@ footer .logo-img{width:44px;height:44px}
     object-position:66% center;
   }
 }
+
+/* ============================================================
+   HIGH MILEAGE V1.6 — DESKTOP HERO FOCAL POSITION
+   Code-only adjustment. Approved V1.5 artwork is unchanged.
+   Enlarges and shifts the hero artwork so the lightning cross
+   clears the headline while preserving the athlete composition.
+   ============================================================ */
+@media(min-width:901px){
+  .hero-image-layer{
+    inset:auto;
+    top:50%;
+    left:50%;
+    width:114%;
+    height:114%;
+    max-width:none;
+    object-fit:cover;
+    object-position:center center;
+    transform:translate(-43.5%,-50%);
+    transform-origin:center center;
+  }
+}
+
+@media(min-width:1400px){
+  .hero-image-layer{
+    width:112%;
+    height:112%;
+    transform:translate(-43%,-50%);
+  }
+}
