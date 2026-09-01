@@ -669,3 +669,75 @@ footer .logo-img{width:44px;height:44px}
     display:none;
   }
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.12
+   Directional Storm-Light Integration
+   ========================= */
+
+/*
+  Hero crop, athlete, lightning cross, typography, and badge size/position
+  remain frozen. This pass changes only how the badge catches the storm light.
+*/
+
+.hero-brand-badge{
+  isolation:isolate;
+}
+
+/* Keep the weathered bronze base grounded in the dark side of the scene. */
+.hero-brand-badge img{
+  filter:
+    brightness(1.08)
+    contrast(1.07)
+    saturate(1.03)
+    drop-shadow(-7px -5px 17px rgba(221,180,116,.13))
+    drop-shadow(0 15px 30px rgba(0,0,0,.56));
+}
+
+/* Directional lightning catch: strongest upper-left, fading across the seal. */
+.hero-brand-badge::after{
+  content:"";
+  position:absolute;
+  inset:3%;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:2;
+  background:
+    radial-gradient(circle at 27% 24%,
+      rgba(255,225,174,.24) 0%,
+      rgba(231,187,120,.15) 20%,
+      rgba(205,154,89,.07) 39%,
+      transparent 62%),
+    linear-gradient(135deg,
+      rgba(245,210,157,.14) 0%,
+      rgba(218,170,104,.08) 30%,
+      transparent 54%,
+      rgba(0,0,0,.08) 100%);
+  mix-blend-mode:screen;
+}
+
+/* Fine rim catch along the storm-facing upper-left edge. */
+.hero-brand-badge::before{
+  content:"";
+  position:absolute;
+  inset:2%;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:3;
+  border-top:1px solid rgba(240,203,146,.30);
+  border-left:1px solid rgba(224,178,111,.22);
+  border-right:1px solid transparent;
+  border-bottom:1px solid transparent;
+  filter:blur(.15px);
+}
+
+/* A very restrained ambient bridge behind the badge so it belongs to the scene. */
+.hero-brand-badge{
+  background:
+    radial-gradient(circle at 25% 28%,
+      rgba(194,145,83,.055) 0%,
+      rgba(194,145,83,.025) 38%,
+      transparent 70%);
+  border-radius:50%;
+}

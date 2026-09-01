@@ -47,3 +47,10 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Adds a restrained storm-light sheen and warm edge catch.
 - Keeps the logo weathered rather than polished or overly glossy.
 - No hero artwork regeneration and no changes to typography, navigation, or copy.
+
+## v1.12 — Directional Storm-Light Integration
+- Keeps the V1.11 hero crop, athlete, cross, typography, badge size, and badge position unchanged.
+- Reduces uniform badge brightness slightly to preserve the weathered bronze.
+- Adds directional illumination to the upper-left/left side of the badge, matching the lightning-cross light source.
+- Fades the light naturally across the badge toward the darker lower-right side.
+- Adds a restrained warm rim catch and ambient integration without an obvious glow.
