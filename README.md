@@ -62,3 +62,7 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Adds the section message: “The athlete is built on more than strength.”
 - Adds the closing standard: “Four pillars. One standard. Stay capable.”
 - Responsive two-column tablet and single-column mobile layouts.
+
+
+## V1.14
+Added cinematic imagery to Strength, Performance, Recovery, and Faith pillar cards while preserving the V1.12 hero and V1.13 layout.

@@ -817,3 +817,66 @@ footer .logo-img{width:44px;height:44px}
   .pillar-card h3{font-size:36px}
   .pillars-standard{gap:12px;margin-top:42px}.pillars-standard p{font-size:9px;letter-spacing:1.6px;text-align:center;white-space:normal}
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.14
+   CINEMATIC FOUR PILLARS IMAGERY
+   V1.12 hero remains frozen.
+   ========================= */
+.pillar-card{
+  min-height:510px;
+  background-color:#091116;
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-size:100% 100%, 100% auto;
+}
+.pillar-card.strength{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.04) 0%,rgba(5,10,13,.08) 27%,rgba(7,13,17,.72) 48%,#091116 67%,#091116 100%),
+    url("assets/pillar-strength.jpg");
+}
+.pillar-card.performance{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.02) 0%,rgba(5,10,13,.07) 27%,rgba(7,13,17,.70) 48%,#091116 67%,#091116 100%),
+    url("assets/pillar-performance.jpg");
+}
+.pillar-card.recovery{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.02) 0%,rgba(5,10,13,.08) 27%,rgba(7,13,17,.73) 48%,#091116 67%,#091116 100%),
+    url("assets/pillar-recovery.jpg");
+}
+.pillar-card.faith{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.02) 0%,rgba(5,10,13,.05) 28%,rgba(8,13,15,.68) 49%,#091116 68%,#091116 100%),
+    url("assets/pillar-faith.jpg");
+}
+.pillar-card::before{
+  background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 45%,rgba(184,136,76,.025));
+  opacity:1;
+}
+.pillar-card.faith::before{
+  background:radial-gradient(circle at 70% 18%,rgba(211,164,95,.10),transparent 34%),linear-gradient(90deg,rgba(0,0,0,.10),transparent 50%);
+}
+.pillar-card::after{opacity:.18}
+.pillar-top{z-index:3}
+.pillar-number{color:#a9b0b3;text-shadow:0 2px 8px rgba(0,0,0,.9)}
+.pillar-mark{color:rgba(212,164,95,.82);text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.pillar-content{padding-top:210px}
+.pillar-card{
+  transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background-size .5s ease,filter .35s ease;
+}
+.pillar-card:hover{
+  background-size:100% 100%,102% auto;
+  filter:brightness(1.045);
+}
+@media(max-width:1100px){
+  .pillar-card{min-height:500px;background-size:100% 100%,100% auto}
+  .pillar-content{padding-top:210px}
+  .pillar-card:hover{background-size:100% 100%,102% auto}
+}
+@media(max-width:700px){
+  .pillar-card{min-height:470px;background-size:100% 100%,100% auto}
+  .pillar-content{padding-top:190px}
+  .pillar-card:hover{background-size:100% 100%,100% auto;filter:none}
+}
