@@ -741,3 +741,79 @@ footer .logo-img{width:44px;height:44px}
       transparent 70%);
   border-radius:50%;
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.13
+   FOUR PILLARS
+   Hero V1.12 remains frozen.
+   ========================= */
+
+.pillars-section{
+  position:relative;
+  overflow:hidden;
+  padding:96px 6vw 105px;
+  background:
+    radial-gradient(ellipse at 50% -12%, rgba(184,136,76,.10), transparent 36%),
+    linear-gradient(180deg,#080f14 0%,#0b1319 18%,#0d151b 58%,#080f14 100%);
+  border-top:1px solid rgba(201,158,95,.12);
+}
+.pillars-section::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.014) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:linear-gradient(to bottom,black,transparent 78%);
+}
+.pillars-kicker{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto 40px;max-width:720px}
+.pillars-kicker p{margin:0;color:var(--gold);font:600 11px Oswald,sans-serif;letter-spacing:4px;white-space:nowrap}
+.kicker-line{height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(201,158,95,.45))}
+.kicker-line:last-child{background:linear-gradient(90deg,rgba(201,158,95,.45),transparent)}
+.pillars-intro{position:relative;z-index:1;text-align:center;max-width:920px;margin:0 auto 62px}
+.pillars-intro .eyebrow{color:#b9c0c4;letter-spacing:3.5px;margin-bottom:16px}
+.pillars-intro h2{font-size:clamp(62px,7.8vw,118px);line-height:.86;margin:0;letter-spacing:-1px}
+.pillars-intro h2 i{color:var(--gold);font-style:normal}
+.pillars-deck{max-width:700px;margin:28px auto 0;color:#9ea8ad;font-size:16px;line-height:1.8}
+
+.pillar-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:1500px;margin:0 auto}
+.pillar-card{position:relative;min-height:510px;padding:27px 27px 31px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;border:1px solid rgba(201,158,95,.17);background:#0a1217;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.pillar-card::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.018),transparent 28%,rgba(0,0,0,.32)),radial-gradient(circle at 75% 15%,rgba(201,158,95,.10),transparent 35%);opacity:.9}
+.pillar-card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;background:repeating-linear-gradient(115deg,transparent 0 19px,rgba(255,255,255,.012) 20px,transparent 21px 38px)}
+.pillar-card:hover{transform:translateY(-6px);border-color:rgba(201,158,95,.42);box-shadow:0 22px 55px rgba(0,0,0,.28)}
+.pillar-card.strength{background:linear-gradient(145deg,#0c151b,#0a1116 70%)}
+.pillar-card.performance{background:linear-gradient(145deg,#101920,#091116 70%)}
+.pillar-card.recovery{background:linear-gradient(145deg,#0b171b,#091116 70%)}
+.pillar-card.faith{background:linear-gradient(145deg,#151711,#0a1115 72%)}
+.pillar-card.faith::before{background:radial-gradient(circle at 72% 17%,rgba(211,164,95,.18),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.02),transparent 35%,rgba(0,0,0,.34))}
+.pillar-top,.pillar-content,.pillar-rule{position:relative;z-index:2}
+.pillar-top{display:flex;align-items:flex-start;justify-content:space-between}
+.pillar-number{font:500 13px Oswald,sans-serif;letter-spacing:2px;color:#7e898f}
+.pillar-mark{font:300 34px Oswald,sans-serif;color:rgba(201,158,95,.58);line-height:1}
+.cross-mark{font-family:Georgia,serif;font-size:38px;text-shadow:0 0 20px rgba(220,173,102,.18)}
+.pillar-content{margin-top:auto;padding-top:100px}
+.pillar-label{margin:0 0 8px!important;color:var(--gold)!important;font:600 10px Oswald,sans-serif!important;letter-spacing:3px!important}
+.pillar-card h3{margin:0 0 13px;font:700 clamp(29px,2.25vw,40px) Oswald,sans-serif;letter-spacing:.5px;line-height:1;color:#f2f0e9}
+.pillar-tag{margin:0 0 19px!important;color:#d0a05f!important;font:600 12px Oswald,sans-serif!important;letter-spacing:2px!important}
+.pillar-card .pillar-content>p:last-child{margin:0;color:#9ca6ab;font-size:14px;line-height:1.72}
+.pillar-rule{display:block;height:2px;width:42px;margin-top:28px;background:var(--gold);box-shadow:0 0 18px rgba(201,158,95,.22);transition:width .28s ease}
+.pillar-card:hover .pillar-rule{width:82px}
+.pillars-standard{position:relative;z-index:1;display:flex;align-items:center;gap:24px;max-width:980px;margin:58px auto 0}
+.pillars-standard span{height:1px;flex:1;background:rgba(201,158,95,.25)}
+.pillars-standard p{margin:0;color:#9ea8ad;font:500 12px Oswald,sans-serif;letter-spacing:3px;white-space:nowrap}
+.pillars-standard b{color:var(--gold);font-weight:600}
+
+@media(max-width:1100px){
+  .pillar-grid{grid-template-columns:repeat(2,1fr)}
+  .pillar-card{min-height:390px}
+  .pillar-content{padding-top:70px}
+}
+@media(max-width:700px){
+  .pillars-section{padding:72px 7vw 80px}
+  .pillars-kicker{gap:12px;margin-bottom:30px}.pillars-kicker p{letter-spacing:2.5px;font-size:9px}
+  .pillars-intro{margin-bottom:42px}.pillars-intro h2{font-size:clamp(54px,16vw,78px)}
+  .pillars-deck{font-size:15px}
+  .pillar-grid{grid-template-columns:1fr;gap:10px}
+  .pillar-card{min-height:330px;padding:24px}
+  .pillar-content{padding-top:58px}
+  .pillar-card h3{font-size:36px}
+  .pillars-standard{gap:12px;margin-top:42px}.pillars-standard p{font-size:9px;letter-spacing:1.6px;text-align:center;white-space:normal}
+}

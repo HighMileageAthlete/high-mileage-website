@@ -54,3 +54,11 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Adds directional illumination to the upper-left/left side of the badge, matching the lightning-cross light source.
 - Fades the light naturally across the badge toward the darker lower-right side.
 - Adds a restrained warm rim catch and ambient integration without an obvious glow.
+
+## v1.13 — Four Pillars
+- Preserves the V1.12 hero composition without changing the approved storm artwork, lightning cross, athlete crop, or bronze hero badge.
+- Rebuilds the Four Pillars section as the first major branded experience below the hero.
+- Adds Strength, Performance, Recovery, and Faith as four cinematic dark panels with burnished-bronze accents.
+- Adds the section message: “The athlete is built on more than strength.”
+- Adds the closing standard: “Four pillars. One standard. Stay capable.”
+- Responsive two-column tablet and single-column mobile layouts.
