@@ -32,3 +32,10 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Fixes the hidden hero Ridgeline Cross seal caused by an older `.seal { display:none; }` rule.
 - Restores the seal in the lower-right corner on desktop/tablet.
 - Leaves mobile uncluttered by hiding the large hero seal on narrow screens.
+
+## v1.10 — Conflict-Free Hero Badge
+- Preserves the successful V1.8/V1.9 hero image and lightning-cross positioning.
+- Replaces the legacy `.seal` / `.real-seal` hero logo classes with a brand-new `.hero-brand-badge` class.
+- Prevents older CSS rules from hiding or repositioning the lower-right logo.
+- Adds cache-busting query strings to CSS, JS, and the hero badge image so GitHub Pages/browser caching cannot serve stale styling.
+- No new artwork generated and no change to hero image colors, brightness, or crop.
