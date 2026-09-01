@@ -590,3 +590,82 @@ footer .logo-img{width:44px;height:44px}
     display:none;
   }
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.11
+   Weathered Bronze Logo Refinement
+   ========================= */
+
+/*
+  Hero image positioning is frozen.
+  This pass changes only the lower-right hero badge:
+  - slightly larger
+  - slightly brighter
+  - subtle storm-light catch on the bronze
+*/
+
+.hero-brand-badge{
+  right:4.6vw;
+  bottom:5.4vh;
+  width:182px;
+  height:182px;
+}
+
+.hero-brand-badge img{
+  filter:
+    brightness(1.12)
+    contrast(1.06)
+    saturate(1.04)
+    drop-shadow(-8px -4px 18px rgba(214,169,102,.16))
+    drop-shadow(0 14px 28px rgba(0,0,0,.52));
+}
+
+/* faint storm-light sheen without changing the source image */
+.hero-brand-badge::after{
+  content:"";
+  position:absolute;
+  inset:4%;
+  border-radius:50%;
+  pointer-events:none;
+  background:
+    linear-gradient(135deg,
+      rgba(236,195,132,.18) 0%,
+      rgba(236,195,132,.07) 24%,
+      transparent 46%,
+      transparent 100%);
+  mix-blend-mode:screen;
+}
+
+@media(min-width:1400px){
+  .hero-brand-badge{
+    width:188px;
+    height:188px;
+    right:4.8vw;
+    bottom:5.8vh;
+  }
+}
+
+@media(max-width:1399px){
+  .hero-brand-badge{
+    width:176px;
+    height:176px;
+    right:4.4vw;
+    bottom:5vh;
+  }
+}
+
+@media(max-width:900px){
+  .hero-brand-badge{
+    width:138px;
+    height:138px;
+    right:3.8vw;
+    bottom:4.2vh;
+  }
+}
+
+@media(max-width:600px){
+  .hero-brand-badge{
+    display:none;
+  }
+}

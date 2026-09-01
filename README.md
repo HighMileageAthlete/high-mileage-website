@@ -39,3 +39,11 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Prevents older CSS rules from hiding or repositioning the lower-right logo.
 - Adds cache-busting query strings to CSS, JS, and the hero badge image so GitHub Pages/browser caching cannot serve stale styling.
 - No new artwork generated and no change to hero image colors, brightness, or crop.
+
+## v1.11 — Weathered Bronze Logo Refinement
+- Hero image positioning and lightning-cross composition are frozen.
+- Enlarges the lower-right Ridgeline Cross badge by roughly 15–20%.
+- Brightens the bronze treatment by roughly 10–12%.
+- Adds a restrained storm-light sheen and warm edge catch.
+- Keeps the logo weathered rather than polished or overly glossy.
+- No hero artwork regeneration and no changes to typography, navigation, or copy.
