@@ -405,98 +405,77 @@ footer .logo-img{width:44px;height:44px}
   }
 }
 
-/* ============================================================
-   HIGH MILEAGE V1.6 — DESKTOP HERO FOCAL POSITION
-   Code-only adjustment. Approved V1.5 artwork is unchanged.
-   Enlarges and shifts the hero artwork so the lightning cross
-   clears the headline while preserving the athlete composition.
-   ============================================================ */
-@media(min-width:901px){
-  .hero-image-layer{
-    inset:auto;
-    top:50%;
-    left:50%;
-    width:114%;
-    height:114%;
-    max-width:none;
-    object-fit:cover;
-    object-position:center center;
-    transform:translate(-43.5%,-50%);
-    transform-origin:center center;
-  }
-}
-
-@media(min-width:1400px){
-  .hero-image-layer{
-    width:112%;
-    height:112%;
-    transform:translate(-43%,-50%);
-  }
-}
-
-
 /* =========================
-   HIGH MILEAGE — V1.7
-   Hero Fine-Tuning Pass
+   HIGH MILEAGE — V1.8
+   Clean Hero Positioning Reset
    ========================= */
 
 /*
-  Goal:
-  1) restore the athlete's full head/face below the navigation,
-  2) reveal more of the existing lightning cross,
-  3) preserve V1.6 color, brightness, typography, and overall scale.
+  V1.8 removes the conflicting V1.6/V1.7 transform rules entirely.
+  The approved hero artwork is unchanged.
+  On desktop the image is slightly oversized, shifted right, and anchored
+  near the top so the athlete's full head and the original lightning cross
+  remain visible together.
 */
 
-/* Slightly reduce the zoom introduced in V1.6 and move the image down. */
 .hero-image-layer{
+  position:absolute;
+  inset:auto;
+  top:0;
+  left:4%;
   width:108%;
   height:108%;
-  left:-1%;
-  top:2.5%;
+  max-width:none;
   object-fit:cover;
-  object-position:57% 38%;
+  object-position:center top;
+  transform:none !important;
+  transform-origin:center center;
 }
 
 /* Wide desktop */
 @media(min-width:1400px){
   .hero-image-layer{
+    top:0;
+    left:4.5%;
     width:107%;
     height:107%;
-    left:-0.5%;
-    top:3.5%;
-    object-position:56% 39%;
+    object-position:center top;
+    transform:none !important;
   }
 }
 
-/* Typical laptop / desktop — tuned for the current screenshot proportions */
+/* Typical laptop / desktop */
 @media(min-width:901px) and (max-width:1399px){
   .hero-image-layer{
+    top:0;
+    left:4%;
     width:108%;
     height:108%;
-    left:-0.5%;
-    top:4%;
-    object-position:56.5% 40%;
+    object-position:center top;
+    transform:none !important;
   }
 }
 
 /* Tablet */
 @media(max-width:900px){
   .hero-image-layer{
-    width:108%;
-    height:108%;
-    left:-1%;
-    top:3%;
-    object-position:61% 39%;
+    top:0;
+    left:1%;
+    width:106%;
+    height:106%;
+    object-position:61% top;
+    transform:none !important;
   }
 }
 
 /* Mobile */
 @media(max-width:600px){
   .hero-image-layer{
-    width:106%;
-    height:106%;
-    left:-1%;
-    top:2%;
-    object-position:64% 40%;
+    top:0;
+    left:0;
+    width:104%;
+    height:104%;
+    object-position:64% top;
+    transform:none !important;
   }
 }

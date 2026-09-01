@@ -17,3 +17,11 @@ Upload the root files and assets folder to the GitHub Pages repository, commit t
 - Moves the approved hero image downward.
 - Nudges the artwork to reveal more of the existing lightning cross.
 - Preserves V1.6 color, brightness, typography, and other page styling.
+
+## v1.8 — Clean Hero Positioning Reset
+- Code-only update; approved hero image unchanged.
+- Removes the V1.6 transform rules instead of overriding them.
+- Removes the V1.7 positioning block so only one desktop positioning system is active.
+- Anchors the hero image near the top to restore the full head/face.
+- Shifts the artwork right so more of the original lightning cross clears the headline.
+- Leaves colors, brightness, typography, navigation, buttons, and bottom-right logo treatment unchanged.
