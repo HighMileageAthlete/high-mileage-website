@@ -1,10 +1,7 @@
-# High Mileage Website V1.15
+HIGH MILEAGE WEBSITE — V1.16
 
-Pillars polish pass.
-
-- Keeps the approved V1.12 hero unchanged.
-- Makes all four pillar images clearly visible in the resting state.
-- Reduces hover to a subtle brightness/scale refinement.
-- Adds low-key storm/mountain atmosphere behind the Four Pillars section.
-- Masks baked-in corner numerals/marks from the concept artwork so the clean HTML labels remain dominant.
-- Retains the V1.13/V1.14 typography, layout, bronze borders, and responsive behavior.
+Pillars image reliability fix.
+- Replaced CSS card backgrounds with real image elements so artwork is visible before hover.
+- Added real atmospheric hero image layer behind Four Pillars.
+- Cache-busted stylesheet/script/assets to v=116.
+- V1.12 hero composition remains unchanged.

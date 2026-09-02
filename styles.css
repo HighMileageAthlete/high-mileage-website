@@ -963,3 +963,122 @@ footer .logo-img{width:44px;height:44px}
   .pillar-card{background-size:100% 100%,112% auto;filter:brightness(1.12) contrast(1.03) saturate(.9)}
   .pillar-card:hover{background-size:100% 100%,112% auto;filter:brightness(1.12) contrast(1.03) saturate(.9)}
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.16
+   PILLARS IMAGE RELIABILITY FIX
+   - Uses real <img> elements instead of CSS background images.
+   - Images are visible at rest; hover is only a subtle lift.
+   - Uses a real atmosphere layer behind the section.
+   - Cache-busted from V1.15.
+   ========================= */
+
+/* Dedicated atmosphere image — no dependency on CSS background caching. */
+.pillars-atmosphere{
+  position:absolute;
+  inset:-5% 0 auto 0;
+  width:100%;
+  height:78%;
+  object-fit:cover;
+  object-position:center 38%;
+  z-index:0;
+  opacity:.28;
+  filter:brightness(.48) saturate(.62) contrast(1.1);
+  pointer-events:none;
+  user-select:none;
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.95) 0%,rgba(0,0,0,.7) 44%,transparent 100%);
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.95) 0%,rgba(0,0,0,.7) 44%,transparent 100%);
+}
+.pillars-section::after{display:none!important;}
+.pillars-section::before{z-index:1;}
+.pillars-kicker,.pillars-intro,.pillar-grid,.pillars-standard{position:relative;z-index:2;}
+
+/* Reset all legacy card background artwork rules. */
+.pillar-card,
+.pillar-card.strength,
+.pillar-card.performance,
+.pillar-card.recovery,
+.pillar-card.faith{
+  background:#091116!important;
+  background-image:none!important;
+  background-size:auto!important;
+  filter:none!important;
+  isolation:isolate;
+}
+
+/* The artwork is a real layer now, always visible before hover. */
+.pillar-art{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:58%;
+  object-fit:cover;
+  object-position:center center;
+  z-index:0;
+  opacity:.88;
+  filter:brightness(.88) contrast(1.06) saturate(.78);
+  transform:scale(1.015);
+  transform-origin:center center;
+  transition:transform .45s ease,filter .35s ease,opacity .35s ease;
+  pointer-events:none;
+  user-select:none;
+}
+.pillar-card.strength .pillar-art{object-position:center 48%;}
+.pillar-card.performance .pillar-art{object-position:center 48%;}
+.pillar-card.recovery .pillar-art{object-position:center 42%;}
+.pillar-card.faith .pillar-art{object-position:center 50%;}
+
+/* Dark fade from photograph into the copy area. */
+.pillar-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:1!important;
+  background:
+    linear-gradient(180deg,
+      rgba(8,15,20,.02) 0%,
+      rgba(8,15,20,.04) 31%,
+      rgba(9,17,22,.45) 47%,
+      rgba(9,17,22,.93) 62%,
+      #091116 75%,
+      #091116 100%);
+}
+
+/* Remove old corner-masking overlays; the source artwork can show naturally. */
+.pillar-card::before,
+.pillar-card.faith::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.10),transparent 42%,rgba(0,0,0,.05));
+  opacity:1;
+}
+
+.pillar-top,.pillar-content,.pillar-rule{position:relative;z-index:3;}
+.pillar-content{padding-top:210px;}
+
+/* Hover never "reveals" the image; it only adds a restrained premium lift. */
+.pillar-card:hover{filter:none!important;}
+.pillar-card:hover .pillar-art{
+  opacity:.94;
+  filter:brightness(.95) contrast(1.07) saturate(.82);
+  transform:scale(1.035);
+}
+
+@media(max-width:1100px){
+  .pillar-art{height:60%;}
+  .pillar-content{padding-top:210px;}
+}
+@media(max-width:700px){
+  .pillars-atmosphere{height:48%;opacity:.20;object-position:60% 34%;}
+  .pillar-art{height:58%;opacity:.90;transform:none;}
+  .pillar-card:hover .pillar-art{transform:none;filter:brightness(.90) contrast(1.06) saturate(.8);}
+  .pillar-content{padding-top:190px;}
+}
