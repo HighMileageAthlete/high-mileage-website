@@ -880,3 +880,86 @@ footer .logo-img{width:44px;height:44px}
   .pillar-content{padding-top:190px}
   .pillar-card:hover{background-size:100% 100%,100% auto;filter:none}
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.15
+   PILLARS IMAGE POLISH
+   Hero V1.12 remains frozen.
+   ========================= */
+
+/* Add the missing cinematic storm/mountain atmosphere behind the section. */
+.pillars-section::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:
+    linear-gradient(180deg,rgba(8,15,20,.44) 0%,rgba(8,15,20,.76) 34%,rgba(8,15,20,.96) 73%,#080f14 100%),
+    linear-gradient(90deg,rgba(8,15,20,.70),rgba(8,15,20,.22) 48%,rgba(8,15,20,.64)),
+    url("assets/high-mileage-storm-hero.png") center 42% / cover no-repeat;
+  opacity:.34;
+  filter:saturate(.72) contrast(1.04);
+}
+.pillars-kicker,.pillars-intro,.pillar-grid,.pillars-standard{z-index:2}
+
+/* Card artwork is visible by default. Hover is now only a refinement. */
+.pillar-card{
+  background-size:100% 100%,108% auto;
+  filter:brightness(1.11) contrast(1.03) saturate(.88);
+  border-color:rgba(201,158,95,.25);
+}
+.pillar-card.strength{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.00) 0%,rgba(5,10,13,.025) 28%,rgba(7,13,17,.46) 52%,rgba(9,17,22,.90) 72%,#091116 100%),
+    url("assets/pillar-strength.jpg");
+}
+.pillar-card.performance{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.00) 0%,rgba(5,10,13,.025) 28%,rgba(7,13,17,.44) 52%,rgba(9,17,22,.90) 72%,#091116 100%),
+    url("assets/pillar-performance.jpg");
+}
+.pillar-card.recovery{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.00) 0%,rgba(5,10,13,.03) 28%,rgba(7,13,17,.47) 52%,rgba(9,17,22,.91) 72%,#091116 100%),
+    url("assets/pillar-recovery.jpg");
+}
+.pillar-card.faith{
+  background-image:
+    linear-gradient(180deg,rgba(5,10,13,.00) 0%,rgba(5,10,13,.015) 30%,rgba(8,13,15,.42) 53%,rgba(9,17,22,.88) 72%,#091116 100%),
+    url("assets/pillar-faith.jpg");
+}
+
+/* Conceal the old baked-in corner numerals/marks from the concept crops.
+   The clean HTML 01–04 and symbols remain on top. */
+.pillar-card::before{
+  background:
+    radial-gradient(ellipse at 4% 5%,rgba(7,13,17,.96) 0%,rgba(7,13,17,.88) 12%,rgba(7,13,17,.18) 27%,transparent 38%),
+    radial-gradient(ellipse at 97% 5%,rgba(7,13,17,.94) 0%,rgba(7,13,17,.83) 12%,rgba(7,13,17,.14) 27%,transparent 38%),
+    linear-gradient(90deg,rgba(0,0,0,.06),transparent 45%,rgba(184,136,76,.02));
+  opacity:1;
+  z-index:1;
+}
+.pillar-card.faith::before{
+  background:
+    radial-gradient(ellipse at 4% 5%,rgba(7,13,17,.96) 0%,rgba(7,13,17,.88) 12%,rgba(7,13,17,.18) 27%,transparent 38%),
+    radial-gradient(ellipse at 97% 5%,rgba(7,13,17,.93) 0%,rgba(7,13,17,.82) 12%,rgba(7,13,17,.12) 27%,transparent 38%),
+    radial-gradient(circle at 70% 18%,rgba(211,164,95,.09),transparent 34%);
+}
+.pillar-card:hover{
+  background-size:100% 100%,110% auto;
+  filter:brightness(1.16) contrast(1.035) saturate(.91);
+  border-color:rgba(201,158,95,.46);
+}
+.pillar-card:hover .pillar-rule{width:70px}
+
+@media(max-width:1100px){
+  .pillar-card{background-size:100% 100%,108% auto;filter:brightness(1.11) contrast(1.03) saturate(.88)}
+  .pillar-card:hover{background-size:100% 100%,110% auto}
+}
+@media(max-width:700px){
+  .pillars-section::after{opacity:.24;background-position:58% 35%}
+  .pillar-card{background-size:100% 100%,112% auto;filter:brightness(1.12) contrast(1.03) saturate(.9)}
+  .pillar-card:hover{background-size:100% 100%,112% auto;filter:brightness(1.12) contrast(1.03) saturate(.9)}
+}
