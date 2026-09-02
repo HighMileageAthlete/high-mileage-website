@@ -1082,3 +1082,52 @@ footer .logo-img{width:44px;height:44px}
   .pillar-card:hover .pillar-art{transform:none;filter:brightness(.90) contrast(1.06) saturate(.8);}
   .pillar-content{padding-top:190px;}
 }
+
+/* =========================
+   HIGH MILEAGE — V1.17
+   MOUNTAIN / CROSS PILLARS + SINGLE HERO BADGE
+   ========================= */
+
+/* Pillars now use their own mountain/cross atmosphere instead of repeating the hero artwork. */
+.pillars-atmosphere{
+  inset:-2% 0 auto 0;
+  height:76%;
+  object-position:center 42%;
+  opacity:.40;
+  filter:brightness(.56) saturate(.72) contrast(1.10);
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.98) 0%,rgba(0,0,0,.82) 46%,rgba(0,0,0,.22) 80%,transparent 100%);
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.98) 0%,rgba(0,0,0,.82) 46%,rgba(0,0,0,.22) 80%,transparent 100%);
+}
+.pillars-section{
+  background:
+    radial-gradient(ellipse at 77% 13%,rgba(190,143,83,.11),transparent 28%),
+    linear-gradient(180deg,#080f14 0%,#0b1319 24%,#0a1217 67%,#080f14 100%);
+}
+
+/* Cover the logo embedded in the hero artwork so only the controllable HTML badge remains. */
+.hero-logo-mask{
+  position:absolute;
+  right:2.1vw;
+  bottom:1.8vh;
+  width:285px;
+  height:235px;
+  z-index:8;
+  pointer-events:none;
+  border-radius:48% 52% 45% 55%;
+  background:
+    radial-gradient(ellipse at 57% 58%,rgba(6,11,14,.98) 0%,rgba(6,11,14,.94) 34%,rgba(7,12,15,.78) 55%,rgba(7,12,15,.24) 76%,transparent 100%);
+  filter:blur(2px);
+}
+.hero-brand-badge{z-index:20;}
+
+@media(max-width:1399px){
+  .hero-logo-mask{right:1.5vw;bottom:1.4vh;width:270px;height:220px;}
+}
+@media(max-width:900px){
+  .hero-logo-mask{right:1vw;bottom:1vh;width:220px;height:180px;}
+  .pillars-atmosphere{height:58%;opacity:.34;object-position:61% 40%;}
+}
+@media(max-width:600px){
+  .hero-logo-mask{display:none;}
+  .pillars-atmosphere{height:50%;opacity:.30;object-position:65% 40%;}
+}
