@@ -1234,3 +1234,42 @@ footer .logo-img{width:44px;height:44px}
   .hero-logo-mask{display:none!important;}
   .hero-brand-badge{transform:scale(.82);}
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.20
+   HERO + PILLARS MICRO-POLISH / LOCK PASS
+   ========================= */
+/* Seat the badge more naturally into the foreground terrain: slightly larger,
+   slightly higher and left, with a restrained storm-light catch. */
+.hero-brand-badge{
+  right:calc(4.0vw + 52px)!important;
+  bottom:calc(3.1vh + 46px)!important;
+  transform:scale(.98)!important;
+  filter:drop-shadow(-8px -7px 18px rgba(214,170,105,.10)) drop-shadow(0 16px 30px rgba(0,0,0,.52));
+}
+.hero-brand-badge::after{
+  opacity:.88;
+}
+
+/* Keep the approved Pillars composition, but let the mountain/cross break
+   through the storm just a touch more without lifting the whole background. */
+.pillars-section::before{
+  background:
+    radial-gradient(circle at 83% 15%,rgba(229,190,126,.105) 0%,rgba(190,143,82,.055) 8%,transparent 22%),
+    radial-gradient(circle at 78% 17%,rgba(182,132,74,.055),transparent 27%),
+    linear-gradient(180deg,rgba(6,12,16,.16) 0%,rgba(7,13,17,.22) 32%,rgba(8,15,20,.62) 59%,#091116 82%)!important;
+}
+.pillars-atmosphere{
+  filter:brightness(.69) saturate(.95) contrast(1.31) sepia(.05)!important;
+}
+
+@media(max-width:1200px){
+  .hero-brand-badge{right:calc(3.2vw + 28px)!important;bottom:calc(2.7vh + 28px)!important;transform:scale(.94)!important;}
+}
+@media(max-width:900px){
+  .hero-brand-badge{right:calc(2.6vw + 16px)!important;bottom:calc(2.2vh + 18px)!important;transform:scale(.89)!important;}
+}
+@media(max-width:600px){
+  .hero-brand-badge{right:2.6vw!important;bottom:2.2vh!important;transform:scale(.82)!important;}
+}

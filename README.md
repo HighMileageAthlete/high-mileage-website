@@ -1,10 +1,10 @@
-# High Mileage Website V1.19
+# High Mileage Website V1.20
 
-Polish pass based on V1.18.
+Hero + Four Pillars micro-polish / lock pass.
 
-- Replaces the rectangular hero-logo concealment with an organic foreground rock/mountain silhouette.
-- Slightly reduces and lowers the controllable Ridgeline Cross badge so it sits naturally in the terrain.
-- Adds subtle haze/rim-light blending around the lower-right hero foreground.
-- Keeps all four approved Pillar cards unchanged.
-- Gives the Pillars mountain/cross atmosphere a small clarity and bronze-light refinement.
-- Cache version bumped to V1.19.
+- Moves the Ridgeline Cross hero badge slightly up and left and increases it subtly for better integration with the foreground terrain.
+- Adds a restrained storm-light catch to the badge.
+- Gives the Pillars mountain/cross background a small localized light/definition lift without changing the approved cards, typography, or layout.
+- Cache version bumped to V1.20.
+
+Upload the full package, including the assets folder, to the existing GitHub Pages repository.
