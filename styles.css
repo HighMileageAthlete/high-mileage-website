@@ -1171,3 +1171,66 @@ footer .logo-img{width:44px;height:44px}
   .pillars-atmosphere{height:60%!important;opacity:.43!important;}
 }
 @media(max-width:600px){.hero-logo-mask{display:none!important;}}
+
+
+/* =========================
+   HIGH MILEAGE — V1.19
+   ORGANIC HERO TERRAIN + FINAL PILLARS ATMOSPHERE
+   ========================= */
+/* Replace the rectangular V1.18 concealment with an irregular foreground
+   landform that visually belongs to the storm scene. */
+.hero-logo-mask{
+  right:-1.5vw!important;
+  bottom:-2px!important;
+  width:500px!important;
+  height:300px!important;
+  border-radius:0!important;
+  z-index:12!important;
+  filter:none!important;
+  background:
+    radial-gradient(ellipse at 74% 77%,rgba(15,22,25,.98) 0 22%,transparent 48%),
+    radial-gradient(ellipse at 47% 90%,rgba(8,15,19,.99) 0 31%,transparent 62%),
+    linear-gradient(150deg,transparent 0 26%,rgba(10,17,21,.84) 42%,rgba(7,13,17,.98) 68%,#070d11 100%)!important;
+  clip-path:polygon(8% 72%,18% 62%,28% 65%,38% 50%,47% 57%,57% 38%,67% 49%,76% 29%,84% 41%,92% 22%,100% 28%,100% 100%,0 100%,0 84%);
+  opacity:1!important;
+}
+/* Haze/rain softens the terrain edge so it reads as foreground, not a patch. */
+.hero-logo-mask::after{
+  content:"";
+  position:absolute;
+  inset:-28px -10px 0 -45px;
+  background:
+    radial-gradient(ellipse at 62% 68%,rgba(25,31,32,.18),transparent 54%),
+    linear-gradient(115deg,transparent 0 40%,rgba(197,157,103,.035) 57%,transparent 74%);
+  filter:blur(10px);
+  pointer-events:none;
+}
+.hero-brand-badge{
+  z-index:30!important;
+  right:4.0vw!important;
+  bottom:3.1vh!important;
+  transform:scale(.90);
+  transform-origin:center bottom;
+}
+
+/* Final Pillars polish: a touch warmer and clearer while keeping the cards dominant. */
+.pillars-atmosphere{
+  height:72%!important;
+  opacity:.52!important;
+  object-position:center 40%!important;
+  filter:brightness(.67) saturate(.94) contrast(1.30) sepia(.05)!important;
+}
+.pillars-section::before{
+  background:
+    radial-gradient(circle at 78% 17%,rgba(182,132,74,.055),transparent 27%),
+    linear-gradient(180deg,rgba(6,12,16,.16) 0%,rgba(7,13,17,.22) 32%,rgba(8,15,20,.62) 59%,#091116 82%)!important;
+}
+@media(max-width:900px){
+  .hero-logo-mask{width:390px!important;height:245px!important;right:-2vw!important;}
+  .hero-brand-badge{right:2.6vw!important;bottom:2.2vh!important;transform:scale(.86);}
+  .pillars-atmosphere{height:62%!important;opacity:.46!important;}
+}
+@media(max-width:600px){
+  .hero-logo-mask{display:none!important;}
+  .hero-brand-badge{transform:scale(.82);}
+}

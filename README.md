@@ -1,8 +1,10 @@
-# High Mileage Website V1.18
+# High Mileage Website V1.19
 
-Polish release based on V1.17.
+Polish pass based on V1.18.
 
-- Preserves the approved hero artwork and Four Pillars card imagery.
-- Uses a stronger lower-right hero blend to conceal the badge embedded in the source artwork while retaining the controllable HTML Ridgeline Cross badge.
-- Refines the Four Pillars mountain/cross atmosphere with greater definition, contrast, and storm depth.
-- Cache-bumped website assets to V1.18.
+- Replaces the rectangular hero-logo concealment with an organic foreground rock/mountain silhouette.
+- Slightly reduces and lowers the controllable Ridgeline Cross badge so it sits naturally in the terrain.
+- Adds subtle haze/rim-light blending around the lower-right hero foreground.
+- Keeps all four approved Pillar cards unchanged.
+- Gives the Pillars mountain/cross atmosphere a small clarity and bronze-light refinement.
+- Cache version bumped to V1.19.
