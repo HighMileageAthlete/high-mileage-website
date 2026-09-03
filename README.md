@@ -1,10 +1,8 @@
-# High Mileage Website V1.17
+# High Mileage Website V1.18
 
-Changes from V1.16:
-- Four Pillars card artwork remains unchanged.
-- Replaced repeated hero artwork behind the Four Pillars section with a dedicated dark mountain + cross atmosphere.
-- Added a controlled hero mask beneath the overlay badge so the logo baked into the hero artwork no longer competes with the website badge.
-- Kept the approved V1.12 hero crop, athlete, lightning cross, typography, and overlay badge treatment intact.
-- Cache-bumped site assets to V1.17.
+Polish release based on V1.17.
 
-Deploy by uploading the contents of this folder to the repository root, including the complete `assets` folder.
+- Preserves the approved hero artwork and Four Pillars card imagery.
+- Uses a stronger lower-right hero blend to conceal the badge embedded in the source artwork while retaining the controllable HTML Ridgeline Cross badge.
+- Refines the Four Pillars mountain/cross atmosphere with greater definition, contrast, and storm depth.
+- Cache-bumped website assets to V1.18.

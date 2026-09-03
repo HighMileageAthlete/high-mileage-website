@@ -1131,3 +1131,43 @@ footer .logo-img{width:44px;height:44px}
   .hero-logo-mask{display:none;}
   .pillars-atmosphere{height:50%;opacity:.30;object-position:65% 40%;}
 }
+
+
+/* =========================
+   HIGH MILEAGE — V1.18
+   HERO BADGE CLEANUP + PILLARS ATMOSPHERE POLISH
+   ========================= */
+/* Broad, opaque blend over the artwork's baked-in lower-right medallion.
+   The separate HTML badge sits above this layer. */
+.hero-logo-mask{
+  right:0!important;
+  bottom:0!important;
+  width:430px!important;
+  height:330px!important;
+  border-radius:0!important;
+  z-index:12!important;
+  filter:none!important;
+  background:
+    linear-gradient(90deg,transparent 0%,rgba(7,13,17,.42) 18%,rgba(7,13,17,.90) 43%,rgba(7,13,17,.99) 68%,#070d11 100%),
+    linear-gradient(0deg,#070d11 0%,rgba(7,13,17,.97) 44%,rgba(7,13,17,.72) 73%,transparent 100%)!important;
+}
+.hero-brand-badge{z-index:30!important;right:4.4vw!important;bottom:4.4vh!important;}
+
+/* More defined mountain/cross atmosphere: less blur/gray, stronger storm depth. */
+.pillars-atmosphere{
+  height:72%!important;
+  opacity:.50!important;
+  object-position:center 38%!important;
+  filter:brightness(.64) saturate(.86) contrast(1.28)!important;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.58) 70%,transparent 100%)!important;
+  mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.58) 70%,transparent 100%)!important;
+}
+.pillars-section::before{
+  background:linear-gradient(180deg,rgba(6,12,16,.18) 0%,rgba(7,13,17,.24) 31%,rgba(8,15,20,.62) 58%,#091116 82%)!important;
+}
+@media(max-width:900px){
+  .hero-logo-mask{width:330px!important;height:255px!important;}
+  .hero-brand-badge{right:3vw!important;bottom:3vh!important;}
+  .pillars-atmosphere{height:60%!important;opacity:.43!important;}
+}
+@media(max-width:600px){.hero-logo-mask{display:none!important;}}
