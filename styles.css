@@ -1515,3 +1515,42 @@ footer .logo-img{width:44px;height:44px}
   .road-copy h2{font-size:46px}
   .road-card-image{height:190px}
 }
+
+/* =========================================================
+   V1.24 — ROAD VISIBILITY + CLEAN CARD ART
+   Keep the cinematic scene at its native wide framing so the
+   winding road remains visible. Card art has been recropped to
+   remove the baked-in 01 / 02 / 03 / 04 markers.
+   ========================================================= */
+.road-section{
+  min-height:880px;
+  background:#071014;
+}
+.road-atmosphere{
+  top:0;
+  left:0;
+  right:auto;
+  bottom:auto;
+  width:100%;
+  height:auto;
+  min-height:0;
+  object-fit:contain;
+  object-position:center top;
+  filter:saturate(.96) contrast(1.06) brightness(.98);
+}
+.road-shade{
+  background:
+    linear-gradient(90deg,rgba(5,11,15,.94) 0%,rgba(5,11,15,.82) 26%,rgba(5,11,15,.30) 53%,rgba(5,11,15,.04) 78%,rgba(5,11,15,.01) 100%),
+    linear-gradient(0deg,rgba(5,11,15,.98) 0%,rgba(5,11,15,.74) 18%,rgba(5,11,15,.12) 58%,rgba(5,11,15,.06) 100%);
+}
+.road-card-image img{object-position:center center}
+
+@media(max-width:1200px){
+  .road-atmosphere{width:100%;left:0;object-position:center top}
+}
+@media(max-width:1000px){
+  .road-atmosphere{width:100%;left:0;object-position:center top}
+}
+@media(max-width:640px){
+  .road-atmosphere{width:auto;height:620px;left:50%;transform:translateX(-62%);max-width:none;object-fit:cover;object-position:center top}
+}
