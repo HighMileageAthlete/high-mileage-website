@@ -1710,3 +1710,11 @@ footer .logo-img{width:44px;height:44px}
 @media(max-width:640px){
   #who .road126-ideal{width:205%;margin-left:-52%;margin-top:-6.2%}
 }
+
+
+/* V1.27 — exact road composition, no crop / no cover / no overlays */
+#who.road127-exact{display:block;position:relative;width:100%;min-height:0!important;height:auto!important;margin:0!important;padding:0!important;overflow:visible!important;background:#071014!important;isolation:isolate;}
+#who.road127-exact::before,#who.road127-exact::after{content:none!important;display:none!important;}
+#who.road127-exact>img{display:block!important;position:static!important;inset:auto!important;width:100%!important;height:auto!important;min-height:0!important;max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;object-position:center top!important;filter:none!important;transform:none!important;opacity:1!important;}
+@media(max-width:900px){#who.road127-exact>img{width:100%!important;height:auto!important;margin:0!important;transform:none!important;object-fit:contain!important;}}
+@media(max-width:640px){#who.road127-exact>img{width:100%!important;height:auto!important;margin:0!important;transform:none!important;object-fit:contain!important;}}
