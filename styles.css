@@ -1458,3 +1458,60 @@ footer .logo-img{width:44px;height:44px}
   .road-atmosphere{object-position:70% center}
   .road-manifesto>span{font-size:14px}
 }
+
+
+/* V1.23 — Road section final fit: brighter scene, clearer roadway, no card numbering */
+.road-section{
+  min-height:880px;
+  padding:54px 4.6vw 48px;
+}
+.road-atmosphere{
+  width:118%;
+  left:-18%;
+  right:auto;
+  object-fit:cover;
+  object-position:right 40%;
+  filter:saturate(.92) contrast(1.08) brightness(.94);
+}
+.road-shade{
+  background:
+    linear-gradient(90deg,rgba(5,11,15,.94) 0%,rgba(5,11,15,.86) 25%,rgba(5,11,15,.42) 52%,rgba(5,11,15,.10) 76%,rgba(5,11,15,.03) 100%),
+    linear-gradient(0deg,rgba(5,11,15,.96) 0%,rgba(5,11,15,.20) 45%,rgba(5,11,15,.10) 100%);
+}
+.road-section:after{
+  height:27%;
+  background:linear-gradient(0deg,#071014 2%,rgba(7,16,20,.86) 45%,transparent 100%);
+}
+.road-content{max-width:1510px}
+.road-copy{width:min(600px,40vw)}
+.road-copy h2{font-size:clamp(54px,4.6vw,88px);line-height:.88;margin:10px 0 20px}
+.road-lead,.road-body{font-size:15.5px;line-height:1.58}
+.road-challenge{margin:18px 0 16px;padding:14px 0 14px 18px}
+.road-challenge span{font-size:20px}
+.road-challenge strong{font-size:15px}
+.road-audiences{margin-top:34px;gap:10px}
+.road-audiences article{min-height:0}
+.road-card-image{height:136px}
+.road-card-copy{padding:14px 18px 16px;min-height:178px}
+.road-audiences h3{font-size:24px;margin:0 0 8px}
+.road-audiences p{font-size:12.8px;line-height:1.45}
+.road-capabilities{margin-top:18px;padding-top:2px}
+.road-manifesto{margin-top:20px}
+.road-manifesto>span{font-size:15px}
+.road-manifesto p{font-size:14px;margin-top:8px}
+
+@media(max-width:1200px){
+  .road-atmosphere{width:128%;left:-28%}
+  .road-copy{width:min(650px,53vw)}
+}
+@media(max-width:1000px){
+  .road-section{min-height:auto;padding:58px 4vw 54px}
+  .road-atmosphere{width:150%;left:-50%;object-position:right center}
+  .road-copy{width:min(720px,92vw)}
+  .road-card-image{height:170px}
+}
+@media(max-width:640px){
+  .road-atmosphere{width:190%;left:-90%;object-position:right center}
+  .road-copy h2{font-size:46px}
+  .road-card-image{height:190px}
+}
