@@ -1718,3 +1718,23 @@ footer .logo-img{width:44px;height:44px}
 #who.road127-exact>img{display:block!important;position:static!important;inset:auto!important;width:100%!important;height:auto!important;min-height:0!important;max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;object-position:center top!important;filter:none!important;transform:none!important;opacity:1!important;}
 @media(max-width:900px){#who.road127-exact>img{width:100%!important;height:auto!important;margin:0!important;transform:none!important;object-fit:contain!important;}}
 @media(max-width:640px){#who.road127-exact>img{width:100%!important;height:auto!important;margin:0!important;transform:none!important;object-fit:contain!important;}}
+
+
+/* =========================
+   HIGH MILEAGE — V1.28
+   SINGLE-ROAD SCENE + PILLARS TRANSITION LIFT
+   ========================= */
+/* Approximately 5% brighter than the locked V1.20 Pillars treatment. */
+.pillars-atmosphere{
+  filter:brightness(.725) saturate(.95) contrast(1.31) sepia(.05)!important;
+}
+.pillar-art{
+  filter:brightness(.924) contrast(1.06) saturate(.78)!important;
+}
+.pillar-card:hover .pillar-art{
+  filter:brightness(.998) contrast(1.07) saturate(.82)!important;
+}
+@media(max-width:700px){
+  .pillar-art{filter:brightness(.945) contrast(1.06) saturate(.78)!important;}
+  .pillar-card:hover .pillar-art{filter:brightness(.945) contrast(1.06) saturate(.8)!important;}
+}
