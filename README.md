@@ -1,8 +1,3 @@
-# High Mileage Website V1.25
+# High Mileage Website V1.26
 
-Asset-level Road section reset.
-
-- New wide clean road background crop keeps the roadway visible.
-- Unique V1.25 audience card classes and filenames eliminate stale 01/02/03/04 numbering.
-- Road section is shorter and brighter on desktop.
-- Hero and Four Pillars remain unchanged.
+V1.26 preserves the approved road-section artwork exactly as generated and fits it into the live site without modifying the image pixels. The artwork's mock navigation is cropped by CSS so the site's real navigation remains the only header. Hero and Four Pillars remain unchanged from the locked versions.
