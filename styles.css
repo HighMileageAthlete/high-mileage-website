@@ -1273,3 +1273,29 @@ footer .logo-img{width:44px;height:44px}
 @media(max-width:600px){
   .hero-brand-badge{right:2.6vw!important;bottom:2.2vh!important;transform:scale(.82)!important;}
 }
+
+/* V1.21 — WHO HIGH MILEAGE IS FOR / THE ROAD */
+.road-section{position:relative;overflow:hidden;min-height:980px;padding:96px 5vw 82px;background:#070d11;color:#f5f2ea;isolation:isolate}
+.road-atmosphere{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-3;filter:saturate(.72) contrast(1.12) brightness(.72)}
+.road-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,11,15,.98) 0%,rgba(5,11,15,.91) 28%,rgba(5,11,15,.48) 58%,rgba(5,11,15,.18) 100%),linear-gradient(0deg,rgba(5,11,15,.98) 0%,rgba(5,11,15,.34) 48%,rgba(5,11,15,.42) 100%)}
+.road-section:after{content:"";position:absolute;inset:auto 0 0;height:38%;z-index:-1;background:linear-gradient(0deg,#071014 4%,rgba(7,16,20,.94) 40%,transparent 100%)}
+.road-content{max-width:1540px;margin:0 auto;position:relative}
+.road-copy{width:min(650px,47vw)}
+.road-copy h2{font-size:clamp(62px,5.3vw,104px);line-height:.86;margin:15px 0 28px;letter-spacing:-.025em}
+.road-copy h2 i{color:#b78a52;font-style:normal}
+.road-lead,.road-body{font-size:17px;line-height:1.72;color:#c9d0d3;max-width:610px}
+.road-challenge{margin:28px 0 22px;padding:19px 0 19px 20px;border-left:2px solid #b78a52;display:grid;gap:7px}
+.road-challenge span{font-family:'Oswald',sans-serif;font-weight:700;font-size:25px;letter-spacing:.03em;color:#f4f0e7}
+.road-challenge strong{font-family:'Oswald',sans-serif;font-size:19px;letter-spacing:.08em;color:#c49a62}
+.road-audiences{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:68px}
+.road-audiences article{position:relative;min-height:230px;padding:30px 27px 28px;background:linear-gradient(145deg,rgba(8,16,20,.91),rgba(8,14,18,.74));border:1px solid rgba(190,145,87,.35);backdrop-filter:blur(5px)}
+.road-audiences article:before{content:"";position:absolute;left:27px;bottom:20px;width:42px;height:2px;background:#b78a52}
+.road-audiences b{font-family:'Oswald',sans-serif;color:#b78a52;letter-spacing:.14em;font-size:13px}
+.road-audiences h3{font-size:29px;line-height:1.02;margin:13px 0 14px}.road-audiences h3 i{display:block;color:#b78a52;font-style:normal}
+.road-audiences p{color:#c1c9cc;line-height:1.58;font-size:14px;margin:0 0 22px}
+.road-manifesto{text-align:center;margin:64px auto 0;max-width:900px}
+.road-manifesto>span{font-family:'Oswald',sans-serif;color:#b78a52;letter-spacing:.16em;font-size:18px;font-weight:700}
+.road-manifesto p{font-size:17px;line-height:1.6;color:#cbd1d3;margin:20px 0}.road-manifesto p strong{color:#f5f2ea}
+.road-manifesto>b{display:inline-block;margin-top:8px;font-family:'Oswald',sans-serif;letter-spacing:.17em;font-size:20px;color:#f5f2ea;border-top:1px solid rgba(183,138,82,.65);padding-top:20px}
+@media(max-width:1000px){.road-section{min-height:auto}.road-copy{width:min(760px,90vw)}.road-audiences{grid-template-columns:repeat(2,1fr)}.road-shade{background:linear-gradient(90deg,rgba(5,11,15,.97),rgba(5,11,15,.62)),linear-gradient(0deg,#071014 0%,transparent 70%)}}
+@media(max-width:640px){.road-section{padding:70px 22px}.road-copy{width:100%}.road-copy h2{font-size:52px}.road-lead,.road-body{font-size:15px}.road-audiences{grid-template-columns:1fr;margin-top:44px}.road-audiences article{min-height:190px}.road-manifesto>span{font-size:15px}.road-atmosphere{object-position:62% center}}
