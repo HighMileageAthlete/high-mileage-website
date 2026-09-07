@@ -1299,3 +1299,162 @@ footer .logo-img{width:44px;height:44px}
 .road-manifesto>b{display:inline-block;margin-top:8px;font-family:'Oswald',sans-serif;letter-spacing:.17em;font-size:20px;color:#f5f2ea;border-top:1px solid rgba(183,138,82,.65);padding-top:20px}
 @media(max-width:1000px){.road-section{min-height:auto}.road-copy{width:min(760px,90vw)}.road-audiences{grid-template-columns:repeat(2,1fr)}.road-shade{background:linear-gradient(90deg,rgba(5,11,15,.97),rgba(5,11,15,.62)),linear-gradient(0deg,#071014 0%,transparent 70%)}}
 @media(max-width:640px){.road-section{padding:70px 22px}.road-copy{width:100%}.road-copy h2{font-size:52px}.road-lead,.road-body{font-size:15px}.road-audiences{grid-template-columns:1fr;margin-top:44px}.road-audiences article{min-height:190px}.road-manifesto>span{font-size:15px}.road-atmosphere{object-position:62% center}}
+
+/* =========================================================
+   V1.22 — WHO HIGH MILEAGE IS FOR / ROAD SECTION FIT PASS
+   Brighter, tighter, image-led cards, website-responsive.
+   ========================================================= */
+.road-section{
+  min-height:auto;
+  padding:58px 5vw 54px;
+  background:#081014;
+}
+.road-atmosphere{
+  object-position:center 42%;
+  filter:saturate(.9) contrast(1.05) brightness(.94);
+}
+.road-shade{
+  background:
+    linear-gradient(90deg,rgba(5,11,15,.94) 0%,rgba(5,11,15,.78) 28%,rgba(5,11,15,.22) 60%,rgba(5,11,15,.08) 100%),
+    linear-gradient(0deg,rgba(5,11,15,.9) 0%,rgba(5,11,15,.22) 48%,rgba(5,11,15,.12) 100%);
+}
+.road-section:after{
+  height:30%;
+  background:linear-gradient(0deg,#071014 5%,rgba(7,16,20,.78) 42%,transparent 100%);
+}
+.road-content{max-width:1500px}
+.road-copy{width:min(610px,43vw)}
+.road-copy .eyebrow{margin-bottom:8px}
+.road-copy h2{
+  font-size:clamp(50px,4.35vw,82px);
+  line-height:.88;
+  margin:10px 0 20px;
+}
+.road-lead,.road-body{
+  font-size:15.5px;
+  line-height:1.52;
+  color:#e0e4e5;
+  max-width:595px;
+}
+.road-challenge{
+  margin:18px 0 16px;
+  padding:13px 0 13px 18px;
+}
+.road-challenge span{font-size:21px}
+.road-challenge strong{font-size:16px}
+
+.road-audiences{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-top:34px;
+}
+.road-audiences article{
+  min-height:0;
+  padding:0;
+  overflow:hidden;
+  background:rgba(7,15,19,.94);
+  border:1px solid rgba(211,169,105,.42);
+  backdrop-filter:none;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.road-audiences article:before{display:none}
+.road-audiences article:hover{
+  transform:translateY(-3px);
+  border-color:rgba(211,169,105,.72);
+  box-shadow:0 14px 34px rgba(0,0,0,.26);
+}
+.road-card-image{
+  position:relative;
+  height:145px;
+  overflow:hidden;
+  background:#0b1115;
+}
+.road-card-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,rgba(7,15,19,.78) 0%,rgba(7,15,19,.06) 48%,rgba(0,0,0,.04) 100%);
+  pointer-events:none;
+}
+.road-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.9) contrast(1.06) brightness(.94);
+  transition:transform .35s ease,filter .35s ease;
+}
+.road-audiences article:hover .road-card-image img{
+  transform:scale(1.025);
+  filter:saturate(.98) contrast(1.06) brightness(1.02);
+}
+.road-card-copy{padding:16px 20px 18px;min-height:190px;position:relative}
+.road-card-copy:after{content:"";display:block;width:38px;height:2px;background:#c08f53;margin-top:14px}
+.road-audiences b{font-size:12px}
+.road-audiences h3{font-size:25px;line-height:1.01;margin:8px 0 9px}
+.road-audiences p{font-size:13px;line-height:1.48;margin:0;color:#d0d5d6}
+
+.road-capabilities{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  max-width:1320px;
+  margin:27px auto 0;
+}
+.road-capabilities>div{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  padding:0 22px;
+  border-right:1px solid rgba(218,224,226,.38);
+}
+.road-capabilities>div:last-child{border-right:0}
+.road-icon{
+  font-family:'Oswald',sans-serif;
+  color:#c08f53;
+  font-size:36px;
+  line-height:1;
+  min-width:38px;
+  text-align:center;
+}
+.road-capabilities p{margin:0;display:grid;gap:1px}
+.road-capabilities strong{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;color:#f4f0e7}
+.road-capabilities small{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.07em;color:#d8dee0}
+
+.road-manifesto{margin:28px auto 0;max-width:860px}
+.road-manifesto>span{font-size:16px}
+.road-manifesto p{font-size:15px;line-height:1.45;margin:12px 0 0}
+.road-manifesto>b{display:none}
+
+@media(max-width:1150px){
+  .road-copy{width:min(640px,52vw)}
+  .road-audiences h3{font-size:22px}
+  .road-card-copy{min-height:205px}
+}
+@media(max-width:1000px){
+  .road-section{padding:60px 4vw 58px}
+  .road-copy{width:min(720px,92vw)}
+  .road-shade{background:linear-gradient(90deg,rgba(5,11,15,.93),rgba(5,11,15,.50)),linear-gradient(0deg,#071014 0%,rgba(7,16,20,.12) 74%)}
+  .road-audiences{grid-template-columns:repeat(2,1fr)}
+  .road-card-image{height:180px}
+  .road-card-copy{min-height:170px}
+  .road-capabilities{grid-template-columns:repeat(2,1fr);row-gap:16px}
+  .road-capabilities>div:nth-child(2){border-right:0}
+}
+@media(max-width:640px){
+  .road-section{padding:52px 22px 48px}
+  .road-copy h2{font-size:48px}
+  .road-lead,.road-body{font-size:14.5px}
+  .road-challenge span{font-size:18px}
+  .road-audiences{grid-template-columns:1fr;margin-top:30px}
+  .road-card-image{height:190px}
+  .road-card-copy{min-height:auto}
+  .road-capabilities{grid-template-columns:1fr;margin-top:24px}
+  .road-capabilities>div{justify-content:flex-start;border-right:0;border-bottom:1px solid rgba(218,224,226,.18);padding:12px 2px}
+  .road-capabilities>div:last-child{border-bottom:0}
+  .road-atmosphere{object-position:70% center}
+  .road-manifesto>span{font-size:14px}
+}

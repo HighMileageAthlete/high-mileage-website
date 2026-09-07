@@ -1,10 +1,13 @@
-# High Mileage Website V1.20
+# High Mileage Website V1.22
 
-Hero + Four Pillars micro-polish / lock pass.
+V1.22 refines the **Who High Mileage Is For / Road** section to match the approved brighter concept while fitting the existing responsive website.
 
-- Moves the Ridgeline Cross hero badge slightly up and left and increases it subtly for better integration with the foreground terrain.
-- Adds a restrained storm-light catch to the badge.
-- Gives the Pillars mountain/cross background a small localized light/definition lift without changing the approved cards, typography, or layout.
-- Cache version bumped to V1.20.
+Changes:
+- Brighter sunrise / road treatment.
+- Shorter, tighter section proportions for desktop.
+- Four audience cards now include visible cinematic imagery.
+- Added Strength / Power / Movement / Capacity capability strip.
+- Preserved V1.20 Hero and Four Pillars sections.
+- Responsive two-column tablet and one-column mobile layouts.
 
-Upload the full package, including the assets folder, to the existing GitHub Pages repository.
+Commit suggestion: `Update High Mileage website to V1.22`
