@@ -1738,3 +1738,24 @@ footer .logo-img{width:44px;height:44px}
   .pillar-art{filter:brightness(.945) contrast(1.06) saturate(.78)!important;}
   .pillar-card:hover .pillar-art{filter:brightness(.945) contrast(1.06) saturate(.8)!important;}
 }
+
+/* ============================================================
+   HIGH MILEAGE — V1.29
+   Four Pillars transition polish: brighter atmosphere + cards
+   Road V1.28 and Hero remain unchanged.
+   ============================================================ */
+.pillars-atmosphere{
+  filter:brightness(.78) saturate(.97) contrast(1.28) sepia(.04)!important;
+  opacity:.48!important;
+}
+.pillar-art{
+  filter:brightness(.97) contrast(1.055) saturate(.80)!important;
+}
+.pillar-card:hover .pillar-art{
+  filter:brightness(1.035) contrast(1.06) saturate(.84)!important;
+}
+@media(max-width:1000px){
+  .pillars-atmosphere{opacity:.46!important;}
+  .pillar-art{filter:brightness(.98) contrast(1.055) saturate(.80)!important;}
+  .pillar-card:hover .pillar-art{filter:brightness(.98) contrast(1.055) saturate(.81)!important;}
+}

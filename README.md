@@ -1,4 +1,4 @@
-HIGH MILEAGE WEBSITE — V1.28
+HIGH MILEAGE WEBSITE — V1.29
 
 Changes from V1.27:
 - Road section now uses the approved single-road composition, keeping the winding road on the left side of the athlete.
@@ -7,4 +7,7 @@ Changes from V1.27:
 - Hero layout and content remain unchanged.
 
 Upload the full contents of this folder to the GitHub Pages repository root and commit to main.
-Suggested commit: Update High Mileage website to V1.28
+Suggested commit: Update High Mileage website to V1.29
+
+
+V1.29: Brightened the Four Pillars atmosphere and card imagery for a smoother visual transition into the approved V1.28 Road section. Hero and Road remain unchanged.
