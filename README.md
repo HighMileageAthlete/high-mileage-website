@@ -1,14 +1,13 @@
-# High Mileage Website V1.30
+HIGH MILEAGE WEBSITE — V1.31
 
-Four Pillars eye-flow pass.
+Four Pillars clarity pass:
+- Brighter and clearer mountain/cross atmosphere
+- Reduced upper/middle dark overlay so clouds, ridges, and cross read more clearly
+- Lower section remains darker to preserve card separation and legibility
+- Subtle additional lift to card imagery
+- Hero unchanged
+- Road V1.28 unchanged
 
-Changes from V1.29:
-- Brightened the Four Pillars mountain/cross atmosphere.
-- Lifted the four card images slightly while preserving black levels and bronze accents.
-- Softened contrast in the atmospheric image so more mountain detail is visible.
-- Raised the section base exposure subtly to create a smoother progression into the bright Road section.
-- Slightly improved secondary-text visibility in the Pillars section.
-- Hero and Road section remain unchanged.
-
-Suggested GitHub commit message:
-`Update High Mileage website to V1.30`
+Upload the CONTENTS of this folder to the GitHub repository root and replace matching files.
+Suggested commit message:
+Update High Mileage website to V1.31
