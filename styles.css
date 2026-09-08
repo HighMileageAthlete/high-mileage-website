@@ -1899,3 +1899,26 @@ footer .logo-img{width:44px;height:44px}
 @media(max-width:1000px){
   .pillars-atmosphere{filter:brightness(1.11) saturate(1.01) contrast(1.09)!important;opacity:.78!important;}
 }
+
+/* ============================================================
+   HIGH MILEAGE — V1.35
+   Four Pillars parity pass: match the background atmosphere to the
+   same browser image treatment used by the pillar cards. Reduce the
+   atmospheric overlays so source detail reads cleanly and directly.
+   Hero, cards, typography, and Road remain unchanged.
+   ============================================================ */
+.pillars-atmosphere{
+  filter:brightness(1.075) contrast(1.035) saturate(.86)!important;
+  opacity:.96!important;
+}
+.pillars-section::before{
+  background:
+    radial-gradient(circle at 82% 15%,rgba(244,214,158,.08) 0%,rgba(204,160,98,.035) 13%,transparent 29%),
+    linear-gradient(180deg,rgba(5,10,13,0) 0%,rgba(6,12,16,0) 34%,rgba(7,14,18,.035) 58%,rgba(8,15,20,.46) 84%,rgba(9,17,22,.88) 100%)!important;
+}
+@media(max-width:1000px){
+  .pillars-atmosphere{
+    filter:brightness(1.075) contrast(1.035) saturate(.86)!important;
+    opacity:.92!important;
+  }
+}

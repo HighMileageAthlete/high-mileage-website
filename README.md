@@ -1,11 +1,11 @@
-# High Mileage Website V1.34
+# High Mileage Website V1.35
 
-Four Pillars clarity pass.
+Four Pillars parity pass.
 
-- Increased source-level sharpness/detail roughly 25–35%.
-- Reduced the smoky/soft appearance without changing composition.
-- Slightly increased mountain/cloud/cross separation.
-- Kept the lower card zone controlled for text readability.
-- Hero, Four Pillars cards, and Road composition remain unchanged.
+- Background atmosphere now uses the same browser image treatment as the pillar cards: brightness(1.075), contrast(1.035), saturate(.86).
+- Background opacity increased so the cleaned source image reads more directly.
+- Upper/middle atmospheric overlays reduced substantially to remove the smoky veil.
+- Lower fade retained for card/text separation.
+- Hero, pillar cards, typography, and Road remain unchanged.
 
-Suggested commit: `Update High Mileage website to V1.34`
+Suggested commit: `Update High Mileage website to V1.35`
