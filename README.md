@@ -1,10 +1,11 @@
-# High Mileage Website V1.33
+# High Mileage Website V1.34
 
-Four Pillars asset-level clarity pass.
+Four Pillars clarity pass.
 
-- Replaces the Four Pillars atmosphere with a cleaned, denoised, upscaled 2560x1440 source asset.
-- Preserves V1.32 brightness while reducing CSS contrast that was amplifying haze/grain.
-- Keeps the lower card zone dark enough for separation.
-- Hero, Four Pillars cards, typography, layout, and Road section remain unchanged.
+- Increased source-level sharpness/detail roughly 25–35%.
+- Reduced the smoky/soft appearance without changing composition.
+- Slightly increased mountain/cloud/cross separation.
+- Kept the lower card zone controlled for text readability.
+- Hero, Four Pillars cards, and Road composition remain unchanged.
 
-Upload the full package, including the new `assets/pillars-mountain-cross-v133.jpg` file.
+Suggested commit: `Update High Mileage website to V1.34`
