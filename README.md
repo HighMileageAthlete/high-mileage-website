@@ -1,14 +1,11 @@
-# High Mileage Website V1.36
+# High Mileage Website V1.37
 
-Four Pillars clarity parity pass.
+## Four Pillars 4K clarity reset
+- Replaces the grainy Four Pillars atmosphere with the newly approved high-detail composition.
+- The complete Four Pillars section is rendered as one exact full-width image so browser overlays and filters cannot reintroduce haze/grain.
+- Hero and Road sections remain unchanged.
 
-Changes:
-- Replaces the Four Pillars atmosphere with `assets/pillars-mountain-cross-v136.jpg`.
-- Applies edge-preserving cleanup to reduce smoky/grainy softness.
-- Adds local luminance contrast and controlled sharpening to reveal cloud, ridge, ray, and cross detail.
-- Displays the atmosphere at essentially full opacity with the same browser image treatment used by the pillar cards.
-- Further reduces the atmospheric overlay while keeping the lower card zone dark enough for separation.
-- Hero, pillar cards, typography, and the locked Road section remain unchanged.
+## GitHub upload
+Upload the contents of this folder to the root of the existing `high-mileage-website` repository and replace files when prompted. Be sure to upload the updated `assets` folder because it contains `four-pillars-4k-v137.png`.
 
-Suggested commit:
-`Update High Mileage website to V1.36`
+Suggested commit: `Update High Mileage website to V1.37`

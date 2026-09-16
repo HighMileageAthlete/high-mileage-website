@@ -1945,3 +1945,20 @@ footer .logo-img{width:44px;height:44px}
     opacity:.98!important;
   }
 }
+
+
+/* ============================================================
+   HIGH MILEAGE — V1.37
+   Four Pillars 4K reset: use the approved high-detail composition
+   as an exact full-width raster section. Hero and Road unchanged.
+   ============================================================ */
+#method.pillars-v137-exact{
+  display:block;position:relative;width:100%;min-height:0!important;height:auto!important;
+  margin:0!important;padding:0!important;overflow:hidden!important;background:#071014!important;
+}
+#method.pillars-v137-exact::before,#method.pillars-v137-exact::after{content:none!important;display:none!important;}
+#method.pillars-v137-exact>img{
+  display:block!important;position:static!important;width:100%!important;height:auto!important;
+  max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;
+  object-position:center top!important;filter:none!important;transform:none!important;opacity:1!important;
+}
