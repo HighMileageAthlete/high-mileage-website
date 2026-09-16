@@ -1,12 +1,15 @@
-# High Mileage Website V1.39
+# High Mileage Website V1.41
 
-V1.39 redesigns only the sections below the locked Road section:
-- Why High Mileage Exists
-- Founder Story
+V1.41 redesigns only the Occupational Athlete / First Responders section.
 
-Locked/unchanged: Hero, Four Pillars, Road.
+## New
+- Cinematic Occupational Athlete artwork
+- New headline: THE JOB DOESN'T GIVE YOU A WARM-UP.
+- Occupational Athlete positioning and readiness copy
+- Four-quality capability strip: Strength, Power, Capacity, Resilience
+- Responsive desktop/mobile treatment
 
-New asset:
-- assets/why-high-mileage-v139.png
+## Locked / unchanged
+Hero, Four Pillars, Road, Why High Mileage Exists, and Founder Story remain unchanged from V1.39.
 
-Deploy: upload the contents of this folder to the root of the existing GitHub Pages repository, replacing matching files. Commit suggestion: `Update High Mileage website to V1.39`.
+Upload the contents of this package to the repository root and replace matching files.
