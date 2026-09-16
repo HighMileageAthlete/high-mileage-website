@@ -1,18 +1,12 @@
-# High Mileage Website V1.38
+# High Mileage Website V1.39
 
-## Four Pillars 4K clarity reset
-- Replaces the grainy Four Pillars atmosphere with the newly approved high-detail composition.
-- The complete Four Pillars section is rendered as one exact full-width image so browser overlays and filters cannot reintroduce haze/grain.
-- Hero and Road sections remain unchanged.
+V1.39 redesigns only the sections below the locked Road section:
+- Why High Mileage Exists
+- Founder Story
 
-## GitHub upload
-Upload the contents of this folder to the root of the existing `high-mileage-website` repository and replace files when prompted. Be sure to upload the updated `assets` folder because it contains `four-pillars-4k-v137.png`.
+Locked/unchanged: Hero, Four Pillars, Road.
 
-Suggested commit: `Update High Mileage website to V1.38`
+New asset:
+- assets/why-high-mileage-v139.png
 
-
-## V1.38 cleanup
-- Removed 01–04 from Four Pillars artwork while retaining card symbols.
-- Removed 01–03 labels from Resources cards.
-- Removed public social-link placeholder note.
-- Hero, Road, layout, and copy otherwise unchanged from V1.37.
+Deploy: upload the contents of this folder to the root of the existing GitHub Pages repository, replacing matching files. Commit suggestion: `Update High Mileage website to V1.39`.
