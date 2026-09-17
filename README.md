@@ -1,15 +1,17 @@
-# High Mileage Website V1.41
+# High Mileage Website V1.42 — Responsive Edition
 
-V1.41 redesigns only the Occupational Athlete / First Responders section.
+Responsive-only update based on V1.41.
 
-## New
-- Cinematic Occupational Athlete artwork
-- New headline: THE JOB DOESN'T GIVE YOU A WARM-UP.
-- Occupational Athlete positioning and readiness copy
-- Four-quality capability strip: Strength, Power, Capacity, Resilience
-- Responsive desktop/mobile treatment
+## What changed
+- Added phone, tablet, laptop and desktop responsive behavior.
+- Prevented horizontal page overflow on narrow screens.
+- Improved mobile navigation sizing and menu layout.
+- Reflowed Founder Story, Occupational Athlete, Resources, Connect and Faith sections for phones.
+- Scaled typography, buttons, spacing and badges for touch screens.
+- Constrained Four Pillars and Road artwork to the device viewport.
+- Added narrow-phone and landscape-phone handling.
 
-## Locked / unchanged
-Hero, Four Pillars, Road, Why High Mileage Exists, and Founder Story remain unchanged from V1.39.
+## What did NOT change
+Hero, Four Pillars, Road, Why High Mileage, Founder Story and Occupational Athlete visual direction/content remain V1.41. This is a responsive-layout pass, not a redesign.
 
-Upload the contents of this package to the repository root and replace matching files.
+Suggested commit: `Update High Mileage website to V1.42 responsive edition`

@@ -1983,3 +1983,109 @@ footer .logo-img{width:44px;height:44px}
 .occupational-v140-strip{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);background:rgba(5,10,13,.92);border-top:1px solid rgba(182,132,74,.55);backdrop-filter:blur(7px)}.occupational-v140-strip>div{padding:30px 2.4vw 34px;border-right:1px solid rgba(214,209,198,.13)}.occupational-v140-strip>div:last-child{border-right:0}.occupational-v140-strip small{display:block;color:var(--bronze);font:13px 'Oswald',sans-serif;letter-spacing:.17em}.occupational-v140-strip b{display:block;margin-top:7px;font:clamp(25px,2vw,37px) 'Bebas Neue',sans-serif;letter-spacing:.025em}
 @media(max-width:900px){.occupational-v140{min-height:900px}.occupational-v140-bg{background-position:58% center}.occupational-v140-inner{width:86vw;grid-template-columns:1fr;padding:100px 0 230px;gap:30px}.occupational-v140-standard{justify-self:start;text-align:left;border-right:0;border-left:3px solid var(--bronze);padding:14px 0 14px 18px}.occupational-v140-strip{grid-template-columns:1fr 1fr}.occupational-v140-strip>div{padding:18px 7vw}.occupational-v140-strip b{font-size:27px}}
 @media(max-width:600px){.occupational-v140{min-height:980px}.occupational-v140-bg{background-position:61% center}.occupational-v140-shade{background:linear-gradient(90deg,rgba(4,8,11,.95),rgba(4,8,11,.62)),linear-gradient(180deg,rgba(4,8,11,.10) 0%,rgba(4,8,11,.38) 45%,rgba(4,8,11,.96) 78%)}.occupational-v140-inner{padding-top:85px;padding-bottom:250px}.occupational-v140-copy h2{font-size:clamp(58px,17vw,80px)}.occupational-v140-copy .occupational-v140-lead{font-size:18px!important}.occupational-v140-copy>p:not(.eyebrow){font-size:15px}.occupational-v140-standard strong{font-size:34px}.occupational-v140-strip>div{padding:15px 6vw 17px}.occupational-v140-strip small{font-size:10px}.occupational-v140-strip b{font-size:22px}}
+
+/* ============================================================
+   HIGH MILEAGE — V1.42 RESPONSIVE EDITION
+   Responsive-only pass. Desktop visual language remains unchanged.
+   ============================================================ */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video{max-width:100%;height:auto}
+main{width:100%;overflow:hidden}
+
+/* Tablet / small laptop */
+@media (max-width:1024px){
+  .site-header{padding-left:4vw;padding-right:4vw}
+  section{max-width:100%}
+  .hero-copy{width:min(66vw,650px)}
+  .founder-v139{padding-left:6vw!important;padding-right:6vw!important}
+  .occupational-v140-inner{width:88vw}
+  .resources,.connect,.faith{padding-left:7vw;padding-right:7vw}
+}
+
+/* Phones and narrow tablets */
+@media (max-width:700px){
+  .site-header{height:72px;padding:0 18px;position:absolute}
+  .site-header .logo-img{width:44px;height:44px}
+  .site-header .brand{gap:9px;min-width:0}
+  .site-header .brand b{font-size:15px;letter-spacing:1.6px;white-space:nowrap}
+  .site-header .brand em{display:none}
+  .menu{display:block;font-size:27px;padding:8px;cursor:pointer}
+  .site-header nav{top:72px;padding:20px 22px;gap:18px;background:rgba(8,15,20,.98);border-bottom:1px solid var(--line)}
+  .site-header nav a{font-size:13px}
+
+  .hero{min-height:100svh;padding:104px 22px 56px;background-position:66% center!important}
+  .hero-copy{width:100%;max-width:100%;padding-top:0}
+  .hero h1{font-size:clamp(54px,16vw,72px);line-height:.88;max-width:95%}
+  .hero .eyebrow{font-size:9px;letter-spacing:2px;max-width:90%}
+  .hero .lead{font-size:15px;line-height:1.55;max-width:92%}
+  .hero-brand-badge{width:86px!important;height:86px!important;right:16px!important;bottom:18px!important}
+  .actions{gap:10px}
+  .btn{padding:12px 14px;font-size:10px;letter-spacing:1.2px}
+
+  section{padding-left:22px;padding-right:22px}
+  .statement{padding-top:66px;padding-bottom:66px}
+  .statement h2{font-size:clamp(42px,12vw,58px);line-height:.92}
+  .statement>p:last-child{font-size:15px;line-height:1.6}
+
+  /* Exact artwork sections always fit inside the viewport. */
+  #method.pillars-v137-exact,#who.road127-exact{width:100vw!important;max-width:100vw!important;overflow:hidden!important}
+  #method.pillars-v137-exact>img,#who.road127-exact>img{display:block!important;width:100vw!important;max-width:100vw!important;height:auto!important;object-fit:contain!important;transform:none!important}
+
+  .why-v139{min-height:auto!important;display:block;padding:0!important;background-position:62% center}
+  .why-v139-shade{background:linear-gradient(90deg,rgba(5,9,12,.97),rgba(5,9,12,.76)),linear-gradient(180deg,rgba(5,9,12,.10),#080d11 100%)}
+  .why-v139-copy{width:auto;margin:0;padding:72px 22px 265px}
+  .why-v139-copy h2{font-size:clamp(50px,15vw,68px);line-height:.86}
+  .why-v139-copy p:not(.eyebrow){font-size:15px;line-height:1.6}
+  .why-v139-copy .why-lead{font-size:17px!important}
+  .why-v139-quote{left:22px;right:22px;bottom:40px;width:auto;padding:22px}
+  .why-v139-quote p{font-size:25px}
+
+  .founder-v139{padding:68px 22px!important}
+  .founder-v139-head h2{font-size:clamp(46px,13vw,60px);line-height:.9;margin-bottom:28px}
+  .founder-intro{font-size:16px;margin-bottom:32px}
+  .founder-v139-grid{grid-template-columns:1fr}
+  .founder-v139-grid article{padding:26px 20px;min-height:0;border-right:0!important;border-bottom:1px solid rgba(182,132,74,.28)!important}
+  .founder-v139-grid article:last-child{border-bottom:0!important}
+  .founder-v139-grid h3{font-size:42px}
+  .founder-v139-close{padding-top:28px;flex-direction:column;align-items:flex-start;gap:5px;font-size:20px}
+  .founder-v139-close em{font-size:27px}
+
+  .occupational-v140{min-height:920px}
+  .occupational-v140-bg{background-position:63% center}
+  .occupational-v140-inner{width:auto;margin:0;padding:72px 22px 245px;display:block}
+  .occupational-v140-copy h2{font-size:clamp(50px,15vw,70px);line-height:.88}
+  .occupational-v140-copy .occupational-v140-lead{font-size:17px!important}
+  .occupational-v140-copy>p:not(.eyebrow){font-size:14px;line-height:1.58}
+  .occupational-v140-standard{margin-top:28px;justify-self:auto;text-align:left;border-right:0;border-left:3px solid var(--bronze);padding:12px 0 12px 15px}
+  .occupational-v140-standard span{font-size:10px}
+  .occupational-v140-standard strong{font-size:30px}
+  .occupational-v140-strip{grid-template-columns:1fr 1fr}
+  .occupational-v140-strip>div{padding:14px 18px 16px}
+  .occupational-v140-strip small{font-size:9px}
+  .occupational-v140-strip b{font-size:20px}
+
+  .resources,.connect,.faith{padding:66px 22px!important}
+  .resources h2,.connect h2,.faith h2{font-size:clamp(46px,13vw,60px);line-height:.92}
+  .cards{grid-template-columns:1fr;margin-top:34px}
+  .cards article{padding:28px 24px}
+  blockquote{font-size:28px}
+  footer{padding:28px 22px;gap:14px}
+  footer .brand b{font-size:15px}
+}
+
+/* Very narrow phones */
+@media (max-width:390px){
+  .hero{padding-left:18px;padding-right:18px}
+  .hero h1{font-size:52px}
+  .actions{flex-direction:column;align-items:flex-start}
+  .why-v139-copy,.founder-v139,.occupational-v140-inner,.resources,.connect,.faith{padding-left:18px!important;padding-right:18px!important}
+  .why-v139-quote{left:18px;right:18px}
+  .occupational-v140-strip b{font-size:18px}
+}
+
+/* Landscape phones: avoid forcing giant vertical hero sections. */
+@media (max-height:520px) and (orientation:landscape){
+  .hero{min-height:720px}
+  .why-v139{min-height:760px!important}
+  .occupational-v140{min-height:760px}
+}
