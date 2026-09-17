@@ -1,13 +1,13 @@
-# High Mileage Website V1.43 — Mobile Refinement
+# High Mileage Website V1.44
 
-Based on V1.42 responsive edition.
+Mobile refinement release.
 
-Mobile-only refinements:
-- Four Pillars now uses a stacked mobile presentation so the headline and all four pillar cards are substantially larger and easier to read.
-- The Road section now uses a stacked mobile presentation so its philosophy, audience cards, and capability standard are easier to read on a phone.
-- Occupational Athlete headline is reduced and tightened on phone widths so “THE JOB DOESN'T GIVE YOU A WARM-UP.” breaks more naturally.
-- Excess mobile vertical space in Occupational Athlete is reduced.
-- Desktop/laptop artwork and layouts remain unchanged.
+- Desktop presentation remains unchanged.
+- Uses the existing approved V1.43/V1.41 images; no artwork replacements.
+- Balances Four Pillars into an even 2×2 mobile composition.
+- Balances the four Road audience cards into an even 2×2 mobile composition.
+- Keeps Road story and capability standard full width.
+- Cleans up Occupational Athlete mobile typography/spacing and reframes the existing V1.41 image so more of the emergency-response scene remains visible.
 
-GitHub commit suggestion:
-Update High Mileage website to V1.43 mobile refinement
+GitHub: upload/replace the package contents at repository root and commit to `main`.
+Suggested commit: `Update High Mileage website to V1.44 mobile balance`
