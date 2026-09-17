@@ -2089,3 +2089,39 @@ main{width:100%;overflow:hidden}
   .why-v139{min-height:760px!important}
   .occupational-v140{min-height:760px}
 }
+
+/* ============================================================
+   HIGH MILEAGE — V1.43 MOBILE REFINEMENT
+   Mobile-only artwork crops improve readability while preserving
+   the approved desktop compositions. Occupational Athlete headline
+   is tightened for phone widths. Desktop remains unchanged.
+   ============================================================ */
+.mobile-art{display:none}
+@media (max-width:700px){
+  #method.pillars-v137-exact>.desktop-art,
+  #who.road127-exact>.desktop-art{display:none!important}
+  #method.pillars-v137-exact>.mobile-art,
+  #who.road127-exact>.mobile-art{display:block!important;width:100%!important;background:#071014}
+  .mobile-art img{display:block!important;width:100%!important;height:auto!important;margin:0!important;padding:0!important;max-width:none!important;object-fit:contain!important}
+  .mobile-pillars-v143 img+img,.mobile-road-v143 img+img{margin-top:-1px!important}
+
+  /* Give the Occupational Athlete headline room to breathe on phones. */
+  .occupational-v140{min-height:820px!important}
+  .occupational-v140-inner{padding:64px 22px 185px!important}
+  .occupational-v140-copy h2{
+    font-size:clamp(43px,12.4vw,56px)!important;
+    line-height:.91!important;
+    letter-spacing:-.012em!important;
+    max-width:11ch!important;
+    margin:10px 0 24px!important;
+  }
+  .occupational-v140-copy .occupational-v140-lead{font-size:16px!important;line-height:1.55!important}
+  .occupational-v140-copy>p:not(.eyebrow){font-size:14px!important;line-height:1.55!important}
+  .occupational-v140-standard{margin-top:24px!important}
+  .occupational-v140-standard strong{font-size:29px!important}
+  .occupational-v140-strip{position:absolute!important}
+}
+@media (max-width:390px){
+  .occupational-v140-copy h2{font-size:43px!important;max-width:10.5ch!important}
+  .occupational-v140-inner{padding-left:18px!important;padding-right:18px!important}
+}

@@ -1,17 +1,13 @@
-# High Mileage Website V1.42 — Responsive Edition
+# High Mileage Website V1.43 — Mobile Refinement
 
-Responsive-only update based on V1.41.
+Based on V1.42 responsive edition.
 
-## What changed
-- Added phone, tablet, laptop and desktop responsive behavior.
-- Prevented horizontal page overflow on narrow screens.
-- Improved mobile navigation sizing and menu layout.
-- Reflowed Founder Story, Occupational Athlete, Resources, Connect and Faith sections for phones.
-- Scaled typography, buttons, spacing and badges for touch screens.
-- Constrained Four Pillars and Road artwork to the device viewport.
-- Added narrow-phone and landscape-phone handling.
+Mobile-only refinements:
+- Four Pillars now uses a stacked mobile presentation so the headline and all four pillar cards are substantially larger and easier to read.
+- The Road section now uses a stacked mobile presentation so its philosophy, audience cards, and capability standard are easier to read on a phone.
+- Occupational Athlete headline is reduced and tightened on phone widths so “THE JOB DOESN'T GIVE YOU A WARM-UP.” breaks more naturally.
+- Excess mobile vertical space in Occupational Athlete is reduced.
+- Desktop/laptop artwork and layouts remain unchanged.
 
-## What did NOT change
-Hero, Four Pillars, Road, Why High Mileage, Founder Story and Occupational Athlete visual direction/content remain V1.41. This is a responsive-layout pass, not a redesign.
-
-Suggested commit: `Update High Mileage website to V1.42 responsive edition`
+GitHub commit suggestion:
+Update High Mileage website to V1.43 mobile refinement
