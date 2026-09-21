@@ -1,13 +1,13 @@
-# High Mileage Website V1.44
+# High Mileage Website V1.45 — Dedicated Mobile Layout
 
-Mobile refinement release.
+V1.45 starts from V1.44 and leaves the approved desktop website unchanged.
 
-- Desktop presentation remains unchanged.
-- Uses the existing approved V1.43/V1.41 images; no artwork replacements.
-- Balances Four Pillars into an even 2×2 mobile composition.
-- Balances the four Road audience cards into an even 2×2 mobile composition.
-- Keeps Road story and capability standard full width.
-- Cleans up Occupational Athlete mobile typography/spacing and reframes the existing V1.41 image so more of the emergency-response scene remains visible.
+Phone-only changes (700px and below):
+- Four Pillars rebuilt as a balanced 2x2 layout using the existing approved pillar images.
+- The four audience profiles rebuilt as a balanced 2x2 layout using the existing approved audience images.
+- Occupational Athlete keeps the exact V1.41 artwork, but now gives the emergency-response image its own visual stage above the copy so police/fire/EMS remain visible.
+- Occupational copy, standard and four capability blocks are reflowed for phone proportions.
 
-GitHub: upload/replace the package contents at repository root and commit to `main`.
-Suggested commit: `Update High Mileage website to V1.44 mobile balance`
+No new artwork was introduced.
+
+Suggested commit: `Update High Mileage website to V1.45 dedicated mobile layout`

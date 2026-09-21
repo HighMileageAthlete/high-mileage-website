@@ -2212,3 +2212,55 @@ main{width:100%;overflow:hidden}
   .occupational-v140-inner{padding-left:18px!important;padding-right:18px!important}
   .occupational-v140-copy h2{font-size:41px!important}
 }
+
+/* ============================================================
+   HIGH MILEAGE — V1.45 DEDICATED PHONE COMPOSITIONS
+   Phone layouts are now purpose-built from the SAME approved image
+   assets. Desktop/tablet artwork remains unchanged.
+   ============================================================ */
+@media (max-width:700px){
+  /* Override the V1.43/1.44 crop-grid approach. */
+  .mobile-pillars-v145,.mobile-road-v145{display:block!important;background:#071014!important;width:100%!important}
+  .mobile-section-banner,.mobile-road-story,.mobile-road-standard{display:block!important;width:100%!important;height:auto!important;margin:0!important}
+  .mobile-card-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;padding:12px!important;background:#071014!important}
+  .mobile-image-card{position:relative!important;min-width:0!important;aspect-ratio:1/1.12!important;overflow:hidden!important;border:1px solid rgba(182,132,74,.36)!important;border-radius:3px!important;padding:14px 12px!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;background-image:linear-gradient(180deg,rgba(4,8,11,.08) 15%,rgba(4,8,11,.88) 82%),var(--card-image)!important;background-size:cover!important;background-position:center!important;color:#f5f5f2!important}
+  .mobile-image-card span{font-size:9px!important;line-height:1.15!important;letter-spacing:1.35px!important;color:#d5c4a1!important;font-weight:800!important;margin-bottom:5px!important}
+  .mobile-image-card h3{font-size:20px!important;line-height:.96!important;letter-spacing:-.02em!important;margin:0!important;color:#fff!important}
+  .mobile-image-card p{font-size:8px!important;letter-spacing:1.25px!important;margin:7px 0 0!important;color:#d6d1c6!important;font-weight:700!important}
+  .mobile-section-close{margin:0!important;padding:16px 12px 20px!important;text-align:center!important;font-size:11px!important;letter-spacing:1.1px!important;background:#071014!important;color:#d6d1c6!important}
+  .mobile-section-close b{color:#d5c4a1!important}
+
+  .audience-grid{padding-top:10px!important;padding-bottom:10px!important}
+  .mobile-image-card.audience{aspect-ratio:1/1.02!important;min-height:0!important;background-position:center!important}
+  .mobile-image-card.audience h3{font-size:17px!important;line-height:1!important}
+  .mobile-road-standard{padding:0!important;background:#071014!important}
+
+  /* Occupational Athlete: same V1.41 art, but phone gets a dedicated
+     visual stage above a compact copy block so emergency vehicles stay visible. */
+  .occupational-v140{min-height:0!important;display:block!important;background:#080f14!important;overflow:hidden!important}
+  .occupational-v140-bg{position:relative!important;inset:auto!important;z-index:0!important;width:100%!important;height:54vw!important;min-height:215px!important;max-height:285px!important;background-image:url('assets/occupational-athlete-v141.png?v=141')!important;background-size:cover!important;background-position:70% 51%!important}
+  .occupational-v140-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,8,11,.02) 45%,#080f14 100%)}
+  .occupational-v140-shade{display:none!important}
+  .occupational-v140-inner{position:relative!important;z-index:1!important;width:100%!important;margin:0!important;padding:0 22px 28px!important;display:block!important;background:#080f14!important}
+  .occupational-v140-copy{max-width:none!important;margin-top:-10px!important}
+  .occupational-v140-copy .eyebrow{font-size:9px!important;letter-spacing:1.8px!important;margin-bottom:9px!important}
+  .occupational-v140-copy h2{font-size:clamp(40px,11vw,50px)!important;line-height:.91!important;max-width:none!important;margin:0 0 18px!important;letter-spacing:-.02em!important}
+  .occupational-v140-copy h2 br{display:none!important}
+  .occupational-v140-copy .occupational-v140-lead{font-size:15px!important;line-height:1.48!important;margin-bottom:12px!important}
+  .occupational-v140-copy>p:not(.eyebrow){font-size:13.5px!important;line-height:1.5!important}
+  .occupational-v140-standard{margin:22px 0 0!important;text-align:left!important;border-right:0!important;border-left:3px solid var(--bronze)!important;padding:9px 0 9px 14px!important}
+  .occupational-v140-standard span{font-size:9px!important;letter-spacing:1.2px!important}
+  .occupational-v140-standard strong{font-size:27px!important;line-height:1!important;margin-top:3px!important}
+  .occupational-v140-strip{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;z-index:2!important;grid-template-columns:repeat(2,1fr)!important;border-top:1px solid rgba(182,132,74,.28)!important;background:#0b1217!important}
+  .occupational-v140-strip>div{min-height:74px!important;padding:13px 14px 14px!important;border-bottom:1px solid rgba(182,132,74,.20)!important}
+  .occupational-v140-strip small{font-size:8px!important;letter-spacing:1.2px!important}
+  .occupational-v140-strip b{font-size:18px!important;line-height:1!important}
+}
+@media (max-width:390px){
+  .mobile-card-grid{gap:8px!important;padding:10px!important}
+  .mobile-image-card{padding:12px 10px!important}
+  .mobile-image-card h3{font-size:18px!important}
+  .mobile-image-card.audience h3{font-size:15px!important}
+  .occupational-v140-inner{padding-left:18px!important;padding-right:18px!important}
+  .occupational-v140-copy h2{font-size:39px!important}
+}
