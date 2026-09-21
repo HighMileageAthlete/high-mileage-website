@@ -1,13 +1,15 @@
-# High Mileage Website V1.45 — Dedicated Mobile Layout
+# High Mileage Website — V1.46 Resources Gateway
 
-V1.45 starts from V1.44 and leaves the approved desktop website unchanged.
+V1.46 starts from the locked V1.45 responsive checkpoint.
 
-Phone-only changes (700px and below):
-- Four Pillars rebuilt as a balanced 2x2 layout using the existing approved pillar images.
-- The four audience profiles rebuilt as a balanced 2x2 layout using the existing approved audience images.
-- Occupational Athlete keeps the exact V1.41 artwork, but now gives the emergency-response image its own visual stage above the copy so police/fire/EMS remain visible.
-- Occupational copy, standard and four capability blocks are reflowed for phone proportions.
+## What changed
+- Rebuilt the Resources area as the High Mileage Platform gateway.
+- Added three cinematic gateways: TRAIN, LEARN, and REBUILD.
+- Added clear content lanes for programs/hybrid training, education/training philosophy, and comeback/recovery resources.
+- Added responsive single-column treatment for tablet and phone.
+- Reused approved High Mileage imagery; no existing hero, Four Pillars, Road, Founder, or Occupational Athlete artwork was replaced.
+- Existing desktop and mobile layouts outside Resources are unchanged.
 
-No new artwork was introduced.
-
-Suggested commit: `Update High Mileage website to V1.45 dedicated mobile layout`
+## GitHub
+Upload the contents of this folder to the repository root and replace matching files.
+Suggested commit: `Update High Mileage website to V1.46 Resources Gateway`
