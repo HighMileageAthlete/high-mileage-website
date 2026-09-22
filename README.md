@@ -1,15 +1,15 @@
-# High Mileage Website — V1.46 Resources Gateway
+# High Mileage Website V1.47 — Resources Image Update
 
-V1.46 starts from the locked V1.45 responsive checkpoint.
+Built from the approved V1.46 Resources Gateway.
 
 ## What changed
-- Rebuilt the Resources area as the High Mileage Platform gateway.
-- Added three cinematic gateways: TRAIN, LEARN, and REBUILD.
-- Added clear content lanes for programs/hybrid training, education/training philosophy, and comeback/recovery resources.
-- Added responsive single-column treatment for tablet and phone.
-- Reused approved High Mileage imagery; no existing hero, Four Pillars, Road, Founder, or Occupational Athlete artwork was replaced.
-- Existing desktop and mobile layouts outside Resources are unchanged.
+- Replaced only the photography behind the TRAIN, LEARN, and REBUILD gateway cards.
+- TRAIN: close-up loaded bar / chalk / HM-branded lifting scene.
+- LEARN: coaching and movement-analysis workspace with subtle High Mileage branding.
+- REBUILD: athlete lacing training shoes with recovery tools and subtle HM branding.
+- Removed the prior repeated rear-facing-athlete visual treatment from these three cards.
+- Existing V1.46 typography, copy, layout, CTAs, responsive behavior, and all earlier site sections remain unchanged.
 
 ## GitHub
-Upload the contents of this folder to the repository root and replace matching files.
-Suggested commit: `Update High Mileage website to V1.46 Resources Gateway`
+Upload the contents of this package to the repository root and replace matching files.
+Suggested commit: `Update High Mileage website to V1.47 resource imagery`

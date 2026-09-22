@@ -2290,9 +2290,9 @@ main{width:100%;overflow:hidden}
 .resources-v146-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.8vw,28px);max-width:1440px;margin:0 auto}
 .resource-gateway{position:relative;min-height:clamp(500px,48vw,680px);overflow:hidden;border:1px solid rgba(214,209,198,.18);background:#111820;background-size:cover;background-position:center;isolation:isolate;box-shadow:0 24px 70px rgba(0,0,0,.34)}
 .resource-gateway::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;z-index:-2;transition:transform .55s ease,filter .55s ease}
-.resource-train::before{background-image:url('assets/pillar-strength.jpg');background-position:52% center}
-.resource-learn::before{background-image:url('assets/why-high-mileage-v139.png');background-position:58% center}
-.resource-rebuild::before{background-image:url('assets/audience-comeback-v125.jpg');background-position:center}
+.resource-train::before{background-image:url('assets/high-mileage-train-v147.jpg');background-position:center center}
+.resource-learn::before{background-image:url('assets/high-mileage-learn-v147.jpg');background-position:center center}
+.resource-rebuild::before{background-image:url('assets/high-mileage-rebuild-v147.jpg');background-position:center center}
 .resource-gateway::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#b6844a;z-index:3;transform:scaleX(.34);transform-origin:left;transition:transform .45s ease}
 .resource-gateway-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,8,10,.12) 0%,rgba(5,8,10,.38) 38%,rgba(5,8,10,.93) 78%,rgba(5,8,10,.98) 100%)}
 .resource-gateway-copy{position:absolute;left:0;right:0;bottom:0;padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;align-items:flex-start}
