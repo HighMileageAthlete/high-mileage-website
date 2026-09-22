@@ -2334,3 +2334,36 @@ main{width:100%;overflow:hidden}
   .resource-rebuild::before{background-position:center}
   .resources-v146-foot{text-align:left}
 }
+
+/* =========================================================
+   V1.48 — VISUAL RHYTHM / ART DIRECTION UPDATE
+   Preserve layout + responsive architecture; vary human perspective.
+   ========================================================= */
+.why-v139{
+  background-image:url('assets/why-high-mileage-v148.png?v=148')!important;
+  background-position:center center!important;
+}
+.why-v139-shade{
+  background:linear-gradient(90deg,rgba(4,8,11,.18) 0%,rgba(4,8,11,.38) 38%,rgba(4,8,11,.90) 68%,rgba(4,8,11,.97) 100%)!important;
+}
+.why-v139-copy{margin-left:auto!important;margin-right:7vw!important;max-width:690px!important}
+.why-v139-quote{left:auto!important;right:7vw!important;text-align:right!important}
+
+.occupational-v140-bg{
+  background-image:url('assets/occupational-athlete-v148.png?v=148')!important;
+  background-position:center center!important;
+}
+.occupational-v140-shade{
+  background:linear-gradient(90deg,rgba(4,8,11,.93) 0%,rgba(4,8,11,.75) 31%,rgba(4,8,11,.18) 58%,rgba(4,8,11,.10) 100%),linear-gradient(180deg,rgba(4,8,11,.05) 0%,rgba(4,8,11,.10) 50%,rgba(4,8,11,.92) 100%)!important;
+}
+
+@media(max-width:900px){
+  .why-v139{background-position:42% center!important}
+  .why-v139-shade{background:linear-gradient(180deg,rgba(4,8,11,.12) 0%,rgba(4,8,11,.40) 42%,rgba(4,8,11,.96) 76%)!important}
+  .why-v139-copy{margin:0!important;max-width:none!important}
+  .why-v139-quote{left:7vw!important;right:7vw!important;text-align:left!important}
+  .occupational-v140-bg{background-position:51% center!important}
+}
+@media(max-width:600px){
+  .occupational-v140-bg{background-position:49% center!important}
+}
