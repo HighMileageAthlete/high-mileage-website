@@ -1,13 +1,20 @@
-# High Mileage Website V1.48 — Visual Rhythm Update
+# High Mileage Website V1.49
 
-Built from the locked V1.47 website.
+## Road / Athlete Card Update
 
-## Changes
-- Replaced the Occupational Athlete background with the approved Jefferson City / Missouri State Capitol emergency-response scene.
-- Preserved the black-and-white patrol vehicle, police/fire/EMS response, wet pavement and red/blue reflections.
-- Reworked the Why High Mileage Exists visual from another rear-facing hero composition to a closer, human training-preparation scene.
-- Adjusted desktop overlays/positioning so the new photography remains visible and the existing copy stays readable.
-- Preserved Four Pillars, Road, TRAIN/LEARN/REBUILD resources, site copy, and responsive architecture.
+V1.49 updates the Road section while preserving the approved V1.48 site structure and all other locked sections.
 
-Suggested commit:
-`Update High Mileage website to V1.48 visual rhythm`
+### Updated
+- New Road desktop artwork with four visually distinct athlete profiles.
+- First Responder card uses the approved user-referenced First Responder concept.
+- Former Athlete, 40+ Athlete, and Comeback Athlete use deliberately different athlete appearances, builds, gender/race, and visual character to reduce repetition.
+- Comeback Athlete now communicates return to performance through sled work rather than repeating the Rebuild/recovery visual language.
+- Mobile Road cards use crops from the new V1.49 athlete artwork.
+
+### Preserved
+- Hero
+- Four Pillars
+- Why High Mileage Exists
+- Occupational Athlete
+- TRAIN / LEARN / REBUILD
+- Existing responsive architecture and branding
